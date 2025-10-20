@@ -1,0 +1,4705 @@
+{
+  "PORTADA DByF": [
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "ALCANCE",
+      "Column4": "Facilitar el manejo y la identificación de los Datos Básicos y Fundamentales (DByF) de IDERA de forma homologada y descentralizada, contribuyendo a garantizar la interoperabilidad y la calidad de la información generada en el ámbito nacional."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "CAMPO DE APLICACIÓN",
+      "Column4": "Generación de Cartografía Oficial de la República Argentina."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "NÚMERO DE LA VERSIÓN",
+      "Column4": "2.0",
+      "Column7": "FECHA DE LA VERSIÓN:",
+      "Column9": "2022-04-18",
+      "Column12": "LENGUAJE:",
+      "Column14": "ESPAÑOL - ES"
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "FUENTES PRINCIPALES",
+      "Column4": "United Nations Initiative on Global Geospatial Information Management: UN-GGIM ",
+      "Column12": "WEB:",
+      "Column13": "http://ggim.un.org"
+    },
+    {
+      "Column4": "Infraestructura Colombiana de Datos Espaciales: ICDE",
+      "Column12": "WEB:",
+      "Column13": "https://www.icde.gov.co"
+    },
+    {
+      "Column4": "Catálogo de Objetos Geográficos IGM Ecuador para cartografía base escala 1:5.000 Versión 1.0",
+      "Column12": "WEB:",
+      "Column13": "http://www.geoportaligm.gob.ec/portal/index.php/descargas/documentos-tecnicos/"
+    },
+    {
+      "Column4": "Diccionario y Catálogo de Objetos Geográficos IGN Argentina Versión 1.0",
+      "Column12": "WEB:",
+      "Column13": "http://www.ign.gob.ar/NuestrasActividades/catalogo-de-objetos-geograficos"
+    },
+    {
+      "Column4": "Datos Fundamentales - UN GGIM - 2019",
+      "Column12": "WEB:",
+      "Column13": "https://docs.google.com/document/d/1ejJzxAoE1pGTH2h775jrKxhYXNKhNEnrK29BWsEnUF8/edit?usp=sharing"
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "PRODUCTOR",
+      "Column4": "NOMBRE:",
+      "Column5": "INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA"
+    },
+    {
+      "Column4": "DIRECCIÓN:",
+      "Column5": "Coordinación Ejecutiva IDERA: Instituto Geográfico Nacional. Avda. Cabildo 381, C 1426 AAD C.A.B.A."
+    },
+    {
+      "Column4": "PAIS:",
+      "Column5": "REPÚBLICA ARGENTINA",
+      "Column8": "PROVINCIA:",
+      "Column9": "BUENOS AIRES",
+      "Column12": "CIUDAD:",
+      "Column13": "CIUDAD AUTÓNOMA DE BUENOS AIRES"
+    },
+    {
+      "Column4": "ON LINE:",
+      "Column5": "http://www.idera.gob.ar/"
+    },
+    {
+      "Column4": "CONTACTO:",
+      "Column5": "Marcos Albornoz: Departamento cartográfico - Gcia Gral. De Catastro y Geodesia - ARBA",
+      "Column12": "CARGO:",
+      "Column13": "Coordinador del Grupo de Trabajo Información Geoespacial de IDERA."
+    },
+    {
+      "Column4": "TELÉFONO:",
+      "Column5": "(0221) 4294675",
+      "Column12": "FAX:"
+    },
+    {
+      "Column4": "E-MAIL:",
+      "Column5": "   infogeo.coord@gmail.com                                                                                                      coordinador_igeoespacial@idera.gob.ar         "
+    },
+    {
+      "Column4": "CONTROL DE VERSIONES",
+      "Column5": "Version 1",
+      "Column6": "Autora: Lic. Nora Lucioni    -  noralucioni@gmail.com                ",
+      "Column10": "Colaboradores: Ricardo Mansilla - Florencia Manduca"
+    },
+    {
+      "Column5": "Version 2",
+      "Column6": "Autor: Arq. Marcos Albornoz  - infogeo.coord@gmail.com",
+      "Column10": "Colaboradores: Ma. Luz Fuentes - Gabriel Asato - Gustavo Pollice - Claudia Olveira Matos - Florencia Raymundo - Lorena Ardisono - Marcelo Alaniz || Diseño: Gabriela Gamoneda"
+    }
+  ],
+  "ESQUEMA DByF": [],
+  "CLASES DByF": [
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "CÓDIGO",
+      "Column2": "CLASE",
+      "Column4": "CONTENIDO"
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "01",
+      "Column2": "INDUSTRIA Y SERVICIOS",
+      "Column4": "Comprende los objetos geográficos relacionados con la extracción y procesamiento de recursos naturales, producción agropecuaria, minería, industrialización, energía, comunicaciones, almacenamiento y logística, tratamiento y gestión de los residuos (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "02",
+      "Column2": "GEOGRAFÍA SOCIAL",
+      "Column4": "Comprende los objetos geográficos que se relacionan en el sentido más amplio con los aspectos sociales de la población. A esta clase pertenecen los dominios de la administración, el ocio, la educación, la salud y la ciencia (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "03",
+      "Column2": "TRANSPORTE",
+      "Column4": "Comprende los objetos geográficos que se relacionan con el conjunto de instalaciones fijas, entidades de flujo y un sistema de control que permiten que personas y bienes venzan la fricción del espacio geográfico 'eficientemente' a efectos de participar oportunamente en alguna actividad deseada (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "04",
+      "Column2": "HIDROGRAFÍA Y OCEANOGRAFÍA",
+      "Column4": "Comprende los objetos geográficos naturales y artificiales relacionados a los ambientes marino, fluvial y lacustre. Incluye las características físicas y químicas del agua, la biología marina y la geología marina (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "05",
+      "Column2": "GEOGRAFÍA FÍSICA",
+      "Column4": "Comprende los objetos geográficos que se relacionan con las formas del relieve terrestre, los suelos y su cobertura (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "07",
+      "Column2": "DEMARCACIÓN",
+      "Column4": "Comprende los objetos territoriales legales que se relacionan con las fronteras y los límites políticos, administrativos y de hecho (IDERA, 2015). "
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "09",
+      "Column2": "INFRAESTRUCTURA DE DEFENSA Y SEGURIDAD",
+      "Column4": "Comprende los objetos geográficos inherentes a las instalaciones militares o a las estructuras de las operaciones militares (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "11",
+      "Column2": "CATASTRO",
+      "Column4": "Comprende los objetos  territoriales legales que pertenecen a un determinado país o distrito, correspondientes a un inventario público, metódicamente ordenado, que contiene datos concernientes a los mismos y que se determinan a partir de actos de levantamientos territoriales. La unidad de registración del catastro es la parcela (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": 12,
+      "Column2": "DIVISIONES CENSALES\n",
+      "Column4": "Comprende los objetos geográficos que definen áreas estadísticas de desagregación del territotio nacional, provincial y de áreas de gobierno local. Se utilizan tanto para el relevamiento como para la publicación de resultados, y son comparables intercensalmente a pesar de la dinámica de distribución de la población (INDEC, 2018). "
+    }
+  ],
+  "SUBCLASES DByF": [
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "CÓDIGO",
+      "Column2": "CLASE",
+      "Column4": "CÓDIGO",
+      "Column5": "SUBCLASE",
+      "Column7": "CONTENIDO"
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "01",
+      "Column2": "INDUSTRIA Y SERVICIOS",
+      "Column4": "0101",
+      "Column5": "EXTRACCIÓN",
+      "Column7": "Objetos geográficos que se relacionan con la extracción de materia prima, incluyendo agua e hidrocarburos (IGN, 2015)."
+    },
+    {
+      "Column4": "0102",
+      "Column5": "FABRICACIÓN Y PROCESAMIENTO",
+      "Column7": "Objetos geográficos que se relacionan con el procesamiento de materia prima y la obtención de bienes, incluyendo el tratamiento del agua (IGN, 2015)."
+    },
+    {
+      "Column4": "0104",
+      "Column5": "ENERGÍA",
+      "Column7": "Objetos geográficos que se relacionan con la producción, transporte y distribución de energía eléctrica (adaptación DFDD)."
+    },
+    {
+      "Column4": "0105",
+      "Column5": "COMUNICACIONES",
+      "Column7": "Objetos geográficos que se refieren a todo tipo de comunicación (adaptación DFDD)."
+    },
+    {
+      "Column4": "0106",
+      "Column5": "ESTRUCTURA ASOCIADA",
+      "Column7": "Objetos geográficos que se relacionan con estructuras de apoyo asociadas a la Clase Industria y servicios (adaptación DFDD)."
+    },
+    {
+      "Column4": "0108",
+      "Column5": "GESTIÓN DE RESIDUOS",
+      "Column7": "Objetos geográficos asociados a la recolección, tratamiento, reciclado y disposición de residuos (adaptación DFDD)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "02",
+      "Column2": "GEOGRAFÍA SOCIAL",
+      "Column4": "0201",
+      "Column5": "ASENTAMIENTO ",
+      "Column7": "Objetos geográficos que se relacionan con centros poblados, sitios y lugares que revisten un interés particular (IDERA, 2015)."
+    },
+    {
+      "Column4": "0205",
+      "Column5": "POLÍTICA Y ADMINISTRACIÓN",
+      "Column7": "Objetos geográficos que se relacionan con la política y / o que describen cuestiones administrativas (adaptación DFDD)."
+    },
+    {
+      "Column4": "0206",
+      "Column5": "EDUCACIÓN",
+      "Column7": "Objetos geográficos relativos a los establecimientos vinculados al desarrollo de actividades educativas (IDERA, 2015)"
+    },
+    {
+      "Column4": "0208",
+      "Column5": "SALUD",
+      "Column7": "Objetos geográficos que se relacionan con instalaciones destinadas a brindar atención sanitaria (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "03",
+      "Column2": "TRANSPORTE",
+      "Column4": "0301",
+      "Column5": "FERROVIARIO",
+      "Column7": "Objetos geográficos que se refieren al transporte ferroviario (IGN, 2015)."
+    },
+    {
+      "Column4": "0302",
+      "Column5": "VIAL",
+      "Column7": "Objetos geográficos que se relacionan con rutas y caminos (IGN, 2015)."
+    },
+    {
+      "Column4": "0304",
+      "Column5": "FLUVIAL, MARÍTIMO Y LACUSTRE",
+      "Column7": "Objetos geográficos relacionados con el transporte fluvial, marítimo y lacustre (IDERA, 2015)."
+    },
+    {
+      "Column4": "0305",
+      "Column5": "AÉREO",
+      "Column7": "Objetos geográficos que se relacionan con el transporte por aire y la infraestructura relacionada (adaptación DFDD)."
+    },
+    {
+      "Column4": "0307",
+      "Column5": "CRUCES, ENLACES Y OBRAS DE ARTE",
+      "Column7": "Objetos geográficos vinculados a obras de ingeniería relacionadas al transporte, cuya función es facilitar la circulación (IGN, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "04",
+      "Column2": "HIDROGRAFÍA Y OCEANOGRAFÍA",
+      "Column4": "0401",
+      "Column5": "COSTAS Y ZONAS LITORALES",
+      "Column7": "Objetos geográficos correspondientes a las costas y zonas del litoral marítimo, fluvial y lacustre (IGN, 2015)."
+    },
+    {
+      "Column4": "0403",
+      "Column5": "PROFUNDIDADES",
+      "Column7": "Objetos geográficos que representan la profundidad en espejos de agua, corrientes de agua, mares y océanos (IGN, 2015)."
+    },
+    {
+      "Column4": "0411",
+      "Column5": "AGUAS CONTINENTALES",
+      "Column7": "Objetos geográficos que se relacionan con el agua que fluye o se almacena sobre la corteza terrestre. Incluye objetos geográficos naturales y obras para su gestión y manejo (IGN, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "05",
+      "Column2": "GEOGRAFÍA FÍSICA",
+      "Column4": "0501",
+      "Column5": "HIPSOGRAFÍA",
+      "Column7": "Objetos geográficos que describen la forma (posiciones y alturas) de la superficie del terreno (adaptación DFDD)."
+    },
+    {
+      "Column4": "0502",
+      "Column5": "GEOMORFOLOGÍA",
+      "Column7": "Objetos geográficos que se refieren a las geoformas del relieve terrestre y sus características a excepción de las de origen glaciario (IDERA, 2015)."
+    },
+    {
+      "Column4": "0506",
+      "Column5": "VULCANISMO Y SISMICIDAD",
+      "Column7": "Objetos geográficos  relacionados a la actividad sísmica y a la actividad volcánica (IDERA, 2015). Se entiende por vulcanismo al fenómeno de erupción de magma donde la lava, piroclastos y gases volcánicos son eruptados a través de un conducto de la superficie de la Tierra. (SEGEMAR, 2019)."
+    },
+    {
+      "Column4": "0509",
+      "Column5": "COBERTURA TERRESTRE",
+      "Column7": "Éste Subgrupo consta de conceptos que describen la cobertura de la superficie terrestre en una perspectiva global (adaptación DFDD)."
+    },
+    {
+      "Column4": "0513",
+      "Column5": "ÁREAS DE CONSERVACIÓN",
+      "Column7": "Objetos geográficos vinculados a áreas definidas geográficamente que han sido designadas, reguladas y administradas a fin de alcanzar objetivos específicos de conservación. Un área protegida es un área manejada con normas que garantizan la protección de los recursos naturales,  culturales y los servicios ecosistémicos (Vida Silvestre)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "07",
+      "Column2": "DEMARCACIÓN",
+      "Column4": "0701",
+      "Column5": "FRONTERAS Y LÍMITES",
+      "Column7": "Objetos geográficos que se relacionan con la demarcación de diferentes tipos de límites entre jurisdicciones (IGN, 2015)."
+    },
+    {
+      "Column4": "0703",
+      "Column5": "REDES GEODÉSICAS",
+      "Column7": "Objetos geográficos que materializan puntos sobre la superficie terrestre que poseen coordenadas geográficas (latitud, longitud) y altura sobre el nivel medio del mar, o valores de gravedad (IDERA, 2015)."
+    },
+    {
+      "Column4": "0705",
+      "Column5": "PLANEAMIENTO URBANO",
+      "Column7": "Objetos territoriales legales definidos por un Código de Planeamiento Urbano que alcanzan y rigen aquellos asuntos relacionados directa o indirectamente con el uso del suelo, de edificios, estructuras e instalaciones, apertura y ensanche de vías públicas, subdivisión y englobamiento de parcelas, volúmenes edificables, tejido urbano, preservación de ámbitos históricos, arquitectónicos, ambientales y paisajísticos y con aquellos aspectos que tengan relación con el ordenamiento urbanístico del territorio de la Ciudad (AGC Catamarca, 2016)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "09",
+      "Column2": "DEFENSA Y SEGURIDAD",
+      "Column4": "0901",
+      "Column5": "INFRAESTRUCTURA DE DEFENSA",
+      "Column7": "Objetos geográficos que se refieren a las instalaciones militares y a las estructuras operativas (adaptación DFDD)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "11",
+      "Column2": "CATASTRO",
+      "Column4": "1101",
+      "Column5": "PARCELARIO",
+      "Column7": "Objetos territoriales legales relacionados con datos concernientes a los objetos territoriales legales de un determinado país o distrito, basado en la mensura de sus límites, metódicamente ordenados (IDERA, 2015)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": 12,
+      "Column2": "UNIDADES GEOESTADÍSTICAS",
+      "Column4": 1201,
+      "Column5": "DIVISIONES CENSALES\n",
+      "Column7": "Comprende el conjunto de divisiones del territorio diseñadas por el INDEC que permiten aseguran la cobertura total del país al momento de llevar adelante los distintos operativos censales (INDEC, 2018)."
+    }
+  ],
+  "DByF": [
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "CÓDIGO",
+      "Column2": "CLASE",
+      "Column3": "CÓDIGO",
+      "Column4": "SUBCLASE",
+      "Column5": "CÓDIGO",
+      "Column6": " DByF",
+      "Column7": "GEOMETRÍA",
+      "Column8": "DEFINICIÓN"
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "01",
+      "Column2": "INDUSTRIA Y SERVICIOS",
+      "Column3": "0101",
+      "Column4": "EXTRACCIÓN",
+      "Column5": "010103",
+      "Column6": "Área de explotación hidrocarburífera",
+      "Column7": "Polígono",
+      "Column8": "Área donde se efectúa una actividad extractiva de origen hidrocarburífera para su aprovechamiento económico."
+    },
+    {
+      "Column3": "0102",
+      "Column4": "FABRICACIÓN Y PROCESAMIENTO",
+      "Column5": "010204",
+      "Column6": "Planta potabilizadora de agua",
+      "Column7": "Punto/Polígono",
+      "Column8": "Instalaciones cuya función es la producción de agua para consumo humano."
+    },
+    {
+      "Column5": "010205",
+      "Column6": "Área de fabricación y procesamiento",
+      "Column7": "Punto/Polígono",
+      "Column8": "Área con instalaciones para producción o procesamiento de materias primas, transformándolas en bienes o productos utilizables en otras actividades. Incluye parques industriales, polos petroquímicos, entre otros."
+    },
+    {
+      "Column3": "0104",
+      "Column4": "ENERGÍA",
+      "Column5": "010401",
+      "Column6": "Central eléctrica",
+      "Column7": "Punto/Polígono",
+      "Column8": "Edificio y equipamiento necesario para la generación de energía eléctrica."
+    },
+    {
+      "Column5": "010402",
+      "Column6": "Línea de transmisión eléctrica",
+      "Column7": "Línea",
+      "Column8": "Sistema de cableado que transmite o distribuye energía eléctrica."
+    },
+    {
+      "Column5": "010403",
+      "Column6": "Planta transformadora",
+      "Column7": "Punto/Polígono",
+      "Column8": "Planta que se encuentra junto a las centrales generadoras o en la periferia de las diversas zonas de consumo, donde se transforma la tensión de la energía eléctrica."
+    },
+    {
+      "Column3": "0105",
+      "Column4": "COMUNICACIONES",
+      "Column5": "010502",
+      "Column6": "Antena",
+      "Column7": "Punto",
+      "Column8": "Dispositivo diseñado con el objetivo de emitir o recibir ondas electromagnéticas. Está ubicado sobre el suelo."
+    },
+    {
+      "Column3": "0106",
+      "Column4": "ESTRUCTURA ASOCIADA",
+      "Column5": "010601",
+      "Column6": "Ducto",
+      "Column7": "Línea",
+      "Column8": "Serie de tubos conectados para el transporte de sólidos, líquidos o gases por bombeo. No incluye acueducto."
+    },
+    {
+      "Column3": "0108",
+      "Column4": "GESTIÓN DE RESIDUOS",
+      "Column5": "010803",
+      "Column6": "Planta de tratamiento de residuos",
+      "Column7": "Polígono",
+      "Column8": "Instalaciones donde se realiza algún tipo de clasificación o tratamiento a los residuos. Incluye plantas de residuos patológicos plantas recicladoras, entre otros."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "02",
+      "Column2": "GEOGRAFÍA SOCIAL",
+      "Column3": "0201",
+      "Column4": "ASENTAMIENTO",
+      "Column5": "020103",
+      "Column6": "Asentamiento humano",
+      "Column7": "Punto",
+      "Column8": "Porción del territorio en donde se asienta la población o se evidencia la presencia de una acción estatal. Se caracteriza por presentar viviendas, aunque estén deshabitadas, edificios donde se asientan dependencias oficiales, edificios donde se concentran las actividades administrativas de explotaciones productivas o alguna infraestructura importante. "
+    },
+    {
+      "Column5": "020104",
+      "Column6": "Planta urbana",
+      "Column7": "Polígono",
+      "Column8": "Área urbana aproximada que incluye la zona contigua de amanzanamiento edificado, cuyos límites son reconocibles."
+    },
+    {
+      "Column3": "0205",
+      "Column4": "POLÍTICA Y ADMINISTRACIÓN",
+      "Column5": "020504",
+      "Column6": "Municipio / Comuna",
+      "Column7": "Punto",
+      "Column8": "Asiento de la autoridad comunal."
+    },
+    {
+      "Column3": "0206",
+      "Column4": "EDUCACIÓN",
+      "Column5": "020601",
+      "Column6": "Establecimiento educativo",
+      "Column7": "Punto/Polígono",
+      "Column8": "Es la unidad institucional donde se registra la oferta educativa, cuya creación o autorización se registra bajo un acto administrativo - ley, decreto, resolución o disposición. Existe en él una autoridad máxima coo responsable pedagógico administrativo, con una planta funcional asignada, para impartir educacióna un grupo de alumnos. El establecimiento constituye la unidad organizacional que contiene en su interior a la/s unidades educativas, las cuales forman parte del establecimiento y se corresponden con cada uno de los niveles de enseñanza para los cuales se imparte educación. Un establecimiento puede funcionar en una o varias localizaciones geográficas. En caso de ser varias se compone de sede/s y anexo/s. Sede: es la localización donde cumple sus funciones la máxima autoridad pedagógica administrativa del establecimiento. La sede puede no tener alumnos. Anexo: es la localización donde funciona una sección o grupo de secciones que depende pedagógica y administrativamente de una localización sede y funciona en otro lugar geográfico (Ministerio de Educación, Ciencia y Tecnología, 2018)."
+    },
+    {
+      "Column5": "020602",
+      "Column6": "Institución universitaria",
+      "Column7": "Punto/Polígono",
+      "Column8": "Institución de enseñanza superior que otorga distintos grados académicos. Incluye Universidades e Institutos Universitarios. "
+    },
+    {
+      "Column3": "0208",
+      "Column4": "SALUD",
+      "Column5": "020801",
+      "Column6": "Edificio de salud",
+      "Column7": "Punto",
+      "Column8": "Construcción destinada a la asistencia de personas. Incluye hospital, sala de primeros auxilios, puesto asistencial, dispensario, entre otros."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "03",
+      "Column2": "TRANSPORTE",
+      "Column3": "0301",
+      "Column4": "FERROVIARIO",
+      "Column5": "030101",
+      "Column6": "Ferrocarril",
+      "Column7": "Línea",
+      "Column8": "Vía férrea constituida por dos o tres rieles o carriles paralelos entre sí, sobre los cuales encajan y giran las ruedas de los trenes (incluye varios modos: ferrocarril, subterráneo, tranvía, entre otros)."
+    },
+    {
+      "Column5": "030102",
+      "Column6": "Estación ferroviaria",
+      "Column7": "Punto/Polígono",
+      "Column8": "Instalación edilicia y demás dependencias donde regularmente se detiene el transporte ferroviario, suben y bajan pasajeros y / o mercancías. Incluye apeadero, embarcadero y parada."
+    },
+    {
+      "Column3": "0302",
+      "Column4": "VIAL",
+      "Column5": "030201",
+      "Column6": "Red vial",
+      "Column7": "Línea",
+      "Column8": "Trayecto diseñado con una superficie especialmente preparada, que se mantiene para ser usado por vehículos generalmente a motor."
+    },
+    {
+      "Column5": "030202",
+      "Column6": "Calle",
+      "Column7": "Línea",
+      "Column8": "Vía de transporte para circulación en el interior de una planta urbana y que no es parte del acceso a la misma. Delimita las manzanas."
+    },
+    {
+      "Column5": "030203",
+      "Column6": "Huella",
+      "Column7": "Línea",
+      "Column8": "Camino de acceso y recorrido de establecimientos. Incluye caminos de poca importancia que se desprenden de caminos de tierra, caminos demarcados en loteos, entre otros."
+    },
+    {
+      "Column5": "030208",
+      "Column6": "Estación de ómnibus",
+      "Column7": "Punto",
+      "Column8": "Predio destinado a la maniobra de ómnibus nacionales e internacionales, carga, ascenso y descenso de pasajeros. Puede o no tener aduana."
+    },
+    {
+      "Column3": "0304",
+      "Column4": "FLUVIAL, MARÍTIMO Y LACUSTRE",
+      "Column5": "030403",
+      "Column6": "Puerto",
+      "Column7": "Punto/Polígono",
+      "Column8": "Lugar dotado de instalaciones de terminales y de transferencia para la carga y descarga de mercaderías o pasajeros. Incluye atracadero para balsas, clubes deportivos y cualquier otra instalación para transferencia de pasajeros y / o mercaderías. No incluye puerto natural."
+    },
+    {
+      "Column5": "030405",
+      "Column6": "Vía navegable",
+      "Column7": "Línea/Polígono",
+      "Column8": "Vía  definida y mantenida por autoridad competente que permite la navegación de una embarcación. Incluye traza de canales en el Río de la Plata, accesos a puertos de La Plata, Buenos Aires y Bahía Blanca, entre otros."
+    },
+    {
+      "Column3": "0305",
+      "Column4": "AÉREO",
+      "Column5": "030501",
+      "Column6": "Aeródromo",
+      "Column7": "Punto/Polígono",
+      "Column8": "Zona definida sobre tierra o agua (incluidos eventuales edificios, instalaciones y equipos), cuyo propósito es ser utilizada total o parcialmente para la llegada, salida y movimiento en superficie de aeronaves y / o helicópteros."
+    },
+    {
+      "Column5": "030502",
+      "Column6": "Ruta aérea (ex línea de flujo ortodrómica)",
+      "Column7": "Línea",
+      "Column8": "Línea que representa el corredor aéreo definido entre el aeródromo de origen y el aeródromo de destino."
+    },
+    {
+      "Column3": "0307",
+      "Column4": "CRUCES, ENLACES Y OBRAS DE ARTE",
+      "Column5": "030701",
+      "Column6": "Puente",
+      "Column7": "Punto/Línea",
+      "Column8": "Estructura que asegura la continuidad de una vía de transporte (red vial, calle, ferrocarril, entre otros) sobre un obstáculo natural o artificial del terreno (corriente de agua, canal, entre otros)."
+    },
+    {
+      "Column5": "030703",
+      "Column6": "Túnel",
+      "Column7": "Punto/Línea",
+      "Column8": "Paso subterráneo abierto artificialmente para establecer una comunicación a través de una montaña, por debajo de una corriente de agua u otro obstáculo."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "04",
+      "Column2": "HIDROGRAFÍA Y OCEANOGRAFÍA",
+      "Column3": "0401",
+      "Column4": "COSTAS Y ZONAS LITORALES",
+      "Column5": "040104",
+      "Column6": "Isla",
+      "Column7": "Punto/Polígono",
+      "Column8": "Parte de la superficie terrestre rodeada de agua y de dimensiones menores que un continente. "
+    },
+    {
+      "Column3": "0403",
+      "Column4": "PROFUNDIDADES",
+      "Column5": "040301",
+      "Column6": "Curva batimétrica",
+      "Column7": "Línea",
+      "Column8": "Línea trazada en un espejo de agua, corriente de agua, mar u océano, que une puntos de igual profundidad respecto de un nivel de referencia definido. También se la denomina isobata."
+    },
+    {
+      "Column3": "0411",
+      "Column4": "AGUAS CONTINENTALES",
+      "Column5": "041103",
+      "Column6": "Corriente de agua",
+      "Column7": "Línea/Polígono",
+      "Column8": "Flujo natural de agua que sigue los desniveles del terreno, siendo arreico o desembocando en otra corriente de agua, en un espejo de agua o en el mar."
+    },
+    {
+      "Column5": "041105",
+      "Column6": "Dique",
+      "Column7": "Punto/Línea",
+      "Column8": "Terraplén (de terreno natural o material) destinado a detener o estancar el escurrimiento del agua en su curso, a los efectos de su almacenamiento para fines rurales o industriales."
+    },
+    {
+      "Column5": "041108",
+      "Column6": "Espejo de agua",
+      "Column7": "Polígono",
+      "Column8": "Cuerpo natural o artificial de agua, dulce o salada, cuyo aporte proviene de corrientes de agua, afloramientos subterráneos o precipitaciones. Quedan excluidos los embalses y los embalses rurales."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "05",
+      "Column2": "GEOGRAFÍA FÍSICA",
+      "Column3": "0501",
+      "Column4": "HIPSOGRAFÍA",
+      "Column5": "050101",
+      "Column6": "Curva de nivel",
+      "Column7": "Línea",
+      "Column8": "Línea que une puntos que tienen el mismo valor de altitud respecto al nivel medio del mar. También se la denomina isohipsa o curva hipsométrica."
+    },
+    {
+      "Column3": "0502",
+      "Column4": "GEOMORFOLOGÍA",
+      "Column5": "050203",
+      "Column6": "Cerro",
+      "Column7": "Punto",
+      "Column8": "Elevación que sobresale de los lineamientos serranos o montañosos. Incluye monte, morro, nevado, pico, entre otros. No incluye volcán. El nevado es un cerro de gran altura que posee nieves perpetuas en su cumbre y permanece blanco durante todo el año. Un pico es una elevación montañosa, de cumbre aguda y puntiaguda con flancos escarpados. "
+    },
+    {
+      "Column3": "0506",
+      "Column4": "VULCANISMO Y SISMICIDAD",
+      "Column5": "050601",
+      "Column6": "Volcán",
+      "Column7": "Punto",
+      "Column8": "Fractura u orificio de la superficie de la tierra a través del cual ascienden magma y gases que provienen de zonas profundas y que liberan importantes cantidades de energía térmica y cinética. Con el mismo nombre se denomina a la elevación topográfica formada por lava, materiales piroclásticos o ambos.     "
+    },
+    {
+      "Column3": "0509",
+      "Column4": "COBERTURA TERRESTRE",
+      "Column5": "050901",
+      "Column6": "Cobertura de la tierra",
+      "Column7": "Pixel",
+      "Column8": "La cobertura de tierra representa la cobertura fisica y biológica de la superficie de la tierra, interpretadas mediante datos satelitales. Se trata de un producto derivado de información satelital. Identifica las diferentes formas de ocupacion del territorio.  (IDECOR 2021)"
+    },
+    {
+      "Column3": "0513",
+      "Column4": "ÁREAS A CONSERVAR",
+      "Column5": "051301",
+      "Column6": "Área protegida",
+      "Column7": "Polígono",
+      "Column8": "Área de tierra y / o mar destinada a la protección y mantenimiento de la diversidad biológica y de los recursos naturales y culturales asociados."
+    },
+    {
+      "Column5": "051302",
+      "Column6": "Reserva de biósfera",
+      "Column7": "Polígono",
+      "Column8": "Ecosistema terrestre o costero/ marino, o una combinación de los mismos, reconocido como tal en un plano internacional en el marco del Programa MAB (Hombre y la Atmósfera) de la UNESCO."
+    },
+    {
+      "Column5": "051303",
+      "Column6": "Sitio Ramsar",
+      "Column7": "Polígono",
+      "Column8": "Sitio de humedal que se enmarca dentro de La Convención sobre los Humedales de Importancia Internacional, llamada Convención de Ramsar, que incluye pantanos y marismas, lagos y ríos, pastizales húmedos y turberas, oasis, estuarios, deltas y bajos de marea, zonas marinas próximas a las costas, manglares y arrecifes de coral, así como sitios artificiales como estanques piscícolas, arrozales, embalses y salinas."
+    },
+    {
+      "Column5": "051304",
+      "Column6": "Ordenamiento Territorial de Bosques Nativos",
+      "Column7": "Polígono",
+      "Column8": "Áreas de protección ambiental a los bosques nativos según lo establecido en la Ley  de 26.331."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "07",
+      "Column2": "DEMARCACIÓN",
+      "Column3": "0701",
+      "Column4": "FRONTERAS Y LÍMITES",
+      "Column5": "070101",
+      "Column6": "Línea de base normal",
+      "Column7": "Línea",
+      "Column8": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea de bajamar a lo largo de la costa. Es la isobata de 0 metro, que corresponde al nivel del datum vertical local."
+    },
+    {
+      "Column5": "070102",
+      "Column6": "Línea de base recta",
+      "Column7": "Línea",
+      "Column8": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea recta que une puntos sobre la línea de base normal. Las líneas de base archipelágicas rectas definen la periferia de un grupo  de islas."
+    },
+    {
+      "Column5": "070103",
+      "Column6": "Línea de costa",
+      "Column7": "Línea",
+      "Column8": "Línea que marca el contacto entre una masa de tierra y un cuerpo de agua, establecida por la línea de las más bajas bajamares, ya sea en las aguas litorales o interiores."
+    },
+    {
+      "Column5": "070104",
+      "Column6": "Límite del lecho y subsuelo",
+      "Column7": "Línea",
+      "Column8": "Línea demarcatoria de aguas jurisdiccionales en los fondos fluviales, definida en el Tratado del Río de la Plata y su Frente Marítimo."
+    },
+    {
+      "Column5": "070105",
+      "Column6": "Límite lateral marítimo",
+      "Column7": "Línea",
+      "Column8": "Línea de deslinde entre mares jurisdiccionales contiguos, definida en el Tratado del Río de la Plata su Frente Marítimo."
+    },
+    {
+      "Column5": "070106",
+      "Column6": "Límite del Mar Territorial Argentino",
+      "Column7": "Línea",
+      "Column8": "Delimitación exterior del Mar Territorial Argentino, el cual se extiende hasta una distancia de 12 millas marinas a partir de las líneas de base."
+    },
+    {
+      "Column5": "070107",
+      "Column6": "Mar Territorial Argentino",
+      "Column7": "Polígono",
+      "Column8": "Zona marítima que se extiende hasta una distancia de 12 millas marinas a partir de la línea de base."
+    },
+    {
+      "Column5": "070108",
+      "Column6": "Límite de la Zona Contigua Argentina",
+      "Column7": "Línea",
+      "Column8": "Delimitación exterior de la Zona Contigua Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+      "Column5": "070109",
+      "Column6": "Zona Contigua Argentina",
+      "Column7": "Polígono",
+      "Column8": "Zona marítima que se extiende desde el límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+      "Column5": "070110",
+      "Column6": "Límite de la Zona Económica Exclusiva Argentina",
+      "Column7": "Línea",
+      "Column8": "Delimitación exterior de la Zona Económica Exclusiva Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+      "Column5": "070111",
+      "Column6": "Zona Económica Exclusiva Argentina",
+      "Column7": "Polígono",
+      "Column8": "Zona marítima que se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+      "Column5": "070112",
+      "Column6": "Límite de la Plataforma Continental",
+      "Column7": "Línea",
+      "Column8": "Delimitación exterior de la Plataforma Continental, la cual comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas medidas a partir de las líneas de base, en los casos en que el borde exterior no llegue a esa distancia."
+    },
+    {
+      "Column5": "070113",
+      "Column6": "Plataforma Continental",
+      "Column7": "Polígono",
+      "Column8": "Zona marítima que comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas contadas desde la línea de base, en los casos en que el borde exterior del margen continental no llegue a esa distancia."
+    },
+    {
+      "Column5": "070114",
+      "Column6": "Límite de gobierno local",
+      "Column7": "Línea",
+      "Column8": "Línea que constituye la representación de la traza demarcadora que delimita un gobierno local de menor jerarquía que un departamento o partido."
+    },
+    {
+      "Column5": "070115",
+      "Column6": "Límite interdepartamental o de partido",
+      "Column7": "Línea",
+      "Column8": "Línea que constituye la representación de la traza demarcadora que delimita la jurisdicción de un departamento o partido de otro."
+    },
+    {
+      "Column5": "070116",
+      "Column6": "Límite interprovincial",
+      "Column7": "Línea",
+      "Column8": "Línea que constituye la representación de la traza demarcadora que delimita una provincia de otra."
+    },
+    {
+      "Column5": "070117",
+      "Column6": "Límite internacional",
+      "Column7": "Línea",
+      "Column8": "Línea que constituye la representación de la traza demarcadora que delimita un país."
+    },
+    {
+      "Column5": "070118",
+      "Column6": "Límite de Zona de Frontera",
+      "Column7": "Línea",
+      "Column8": "Línea que constituye la representación de la traza demarcadora que delimita la Zona de Frontera."
+    },
+    {
+      "Column5": "070119",
+      "Column6": "Zona de Frontera",
+      "Column7": "Polígono",
+      "Column8": "Zona adyacente al límite internacional, que constituye una zona de seguridad destinada a complementar las previsiones territoriales de la defensa nacional y / o un área prioritaria para su desarrollo."
+    },
+    {
+      "Column5": "070120",
+      "Column6": "Municipio",
+      "Column7": "Polígono",
+      "Column8": "División político administrativa de tercer orden, que incluye comunas, juntas vecinales y demás formas de gobierno local."
+    },
+    {
+      "Column5": "070121",
+      "Column6": "Departamento",
+      "Column7": "Polígono",
+      "Column8": "División político administrativa de segundo orden. Incluye partido y comuna."
+    },
+    {
+      "Column5": "070122",
+      "Column6": "Provincia",
+      "Column7": "Polígono",
+      "Column8": "División político territorial de primer orden. Incluye la Ciudad Autónoma de Buenos Aires (CABA)."
+    },
+    {
+      "Column5": "070123",
+      "Column6": "País",
+      "Column7": "Polígono",
+      "Column8": "Nación jurídicamente organizada."
+    },
+    {
+      "Column5": "070124",
+      "Column6": "Paso fronterizo",
+      "Column7": "Punto",
+      "Column8": "Punto geográfico (hecho físico) que permite ingresar o salir de un país."
+    },
+    {
+      "Column3": "0703",
+      "Column4": "REDES GEODÉSICAS",
+      "Column5": "070301",
+      "Column6": "Red RAMSAC",
+      "Column7": "Punto",
+      "Column8": "Red de estaciones GPS/GNSS permanentes que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007. Esta red es denominada Red Argentina de Monitoreo Satelital Continuo (RAMSAC)."
+    },
+    {
+      "Column5": "070302",
+      "Column6": "Red Geocéntrica",
+      "Column7": "Punto",
+      "Column8": "Red de pilares o mojones de primer orden que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007."
+    },
+    {
+      "Column5": "070306",
+      "Column6": "Red Altimétrica",
+      "Column7": "Punto",
+      "Column8": "Red de pilares o mojones que poseen una altura referida al nivel medio del mar, a la que se la denomina cota."
+    },
+    {
+      "Column5": "070307",
+      "Column6": "Red gravimétrica",
+      "Column7": "Punto",
+      "Column8": "Red de pilares o mojones que poseen un valor de aceleración de la gravedad en el datum gravimétrico por el Instituto Geográfico Nacional."
+    },
+    {
+      "Column3": "0705",
+      "Column4": "PLANEAMIENTO URBANO",
+      "Column5": "070503",
+      "Column6": "Usos de suelo",
+      "Column7": "Polígono",
+      "Column8": "La clasificación del uso de suelo está definida por las distintas categorías de espacios dentro de un municipio, en términos de los niveles de usos urbanos, de transición y rurales. (Mun SS de Jujuy - 2021)"
+    },
+    {
+      "Column5": "070504",
+      "Column6": "Ejido urbano",
+      "Column7": "Polígono",
+      "Column8": "Área urbana delimitada legalmente."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "09",
+      "Column2": "DEFENSA Y SEGURIDAD",
+      "Column3": "0901",
+      "Column4": "INFRAESTRUCTURA DE DEFENSA",
+      "Column5": "090101",
+      "Column6": "Edificio de seguridad",
+      "Column7": "Punto",
+      "Column8": "Construcción destinada al asiento de la autoridad encargada de la seguridad. "
+    },
+    {
+      "Column5": "090103",
+      "Column6": "Cuartel de bomberos",
+      "Column7": "Punto",
+      "Column8": "Estructura preparada para almacenar el equipamiento necesario para apagar fuegos, incluyendo mangueras, vehículos, equipos de protección del personal, extintores de fuego, entre otros. Puede tener también dormitorios e instalaciones de trabajo como salas de reunión, entre otros."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": "11",
+      "Column2": "CATASTRO",
+      "Column3": "1101",
+      "Column4": "PARCELARIO",
+      "Column5": "110101",
+      "Column6": "Parcela",
+      "Column7": "Polígono",
+      "Column8": "Extensión territorial continua, deslindada por un polígono de límites conocidos, perteneciente a un propietario."
+    },
+    {
+      "Column5": 110102,
+      "Column6": "Manzana",
+      "Column7": "Polígono",
+      "Column8": "Superficie de terreno delimitada por vía pública y / o deslinde de corredor ferroviario y / o registrada como tal por la Dirección General de Catastro."
+    },
+    {
+      "Column5": 110103,
+      "Column6": "Sección catastral",
+      "Column7": "Polígono",
+      "Column8": "Registro administrativo dependiente del Estado en el que se describen los bienes inmuebles."
+    },
+    {
+      "Column5": 110107,
+      "Column6": "Circunscripción",
+      "Column7": "Polígono",
+      "Column8": "Polígonos en los que un Partido (Departamento) se subdivide, pudiendo contener en conjunto o separadamente plantas urbanas, suburbanas y rurales (ARBA,2018)."
+    },
+    {
+      "DATOS BÁSICOS Y FUNDAMENTALES \nCATÁLOGO DE OBJETOS GEOGRÁFICOS INFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA": 12,
+      "Column2": "UNIDADES GEOESTADÍSTICAS",
+      "Column3": 1201,
+      "Column4": "DIVISIONES CENSALES\n",
+      "Column5": 120101,
+      "Column6": "Fracción censal",
+      "Column7": "Polígono",
+      "Column8": "Unidad censal en que se divide cada departamento, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC,  2018)."
+    },
+    {
+      "Column5": 120102,
+      "Column6": "Radio censal",
+      "Column7": "Polígono",
+      "Column8": "Unidad censal que forma parte de una fracción, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC, 2018)."
+    }
+  ],
+  "INDUSTRIA Y SERVICIOS DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0101",
+      "Column3": "EXTRACCIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010103",
+      "Column3": "Área de explotación hidrocarburífera"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Área donde se efectúa una actividad extractiva de origen hidrocarburífera para su aprovechamiento económico."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0102",
+      "Column3": "FABRICACIÓN Y PROCESAMIENTO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010204",
+      "Column3": "Planta potabilizadora de agua"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Instalaciones cuya función es la producción de agua para consumo humano."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0102",
+      "Column3": "FABRICACIÓN Y PROCESAMIENTO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010205",
+      "Column3": "Área de fabricación y procesamiento"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Área con instalaciones para producción o procesamiento de materias primas, transformándolas en bienes o productos utilizables en otras actividades. Incluye parques industriales, polos petroquímicos, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0104",
+      "Column3": "ENERGÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010401",
+      "Column3": "Central eléctrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Edificio y equipamiento necesario para la generación de energía eléctrica."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "PPC",
+      "Column3": "Tipo de centra eléctrica"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0104",
+      "Column3": "ENERGÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010402",
+      "Column3": "Línea de transmisión eléctrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Sistema de cableado que transmite o distribuye energía eléctrica."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "TEN",
+      "Column3": "Tipo de tensión"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0104",
+      "Column3": "ENERGÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010403",
+      "Column3": "Planta transformadora"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Planta que se encuentra junto a las centrales generadoras o en la periferia de las diversas zonas de consumo, donde se transforma la tensión de la energía eléctrica."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0105",
+      "Column3": "COMUNICACIONES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010502",
+      "Column3": "Antena"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Dispositivo diseñado con el objetivo de emitir o recibir ondas electromagnéticas. Está ubicado sobre un mástil, torre, edificio o construcción elevada desde el nivel del suelo."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CIC",
+      "Column3": "Código único de identificación de la IDE de Comunicaciones"
+    },
+    {
+      "Column2": "BDA",
+      "Column3": "Banda del espectro electromagnético en la que opera la antena."
+    },
+    {
+      "Column2": "SIR",
+      "Column3": "Tipo de tecnología a la que sirve la antena. (2G, 3G, 4G, 450Mhz, Broadcast, TDA, etc.)."
+    },
+    {
+      "Column2": "MSL",
+      "Column3": "Distancia vertical respecto al nivel medio del mar (cota)."
+    },
+    {
+      "Column2": "EGL",
+      "Column3": "Elevación relativa"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Clasificación del estado constructivo de estructuras y/o equipos que componen una instalación."
+    },
+    {
+      "Column2": "FDD",
+      "Column3": "Indicación de la fecha que indica el día, mes y año de toma del dato fuente."
+    },
+    {
+      "Column2": "OBS",
+      "Column3": "Cualquier observación o referencia permanente o transitoria referida a un elemento en particular de este Objeto Geográfico."
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0106",
+      "Column3": "ESTRUCTURA ASOCIADA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010601",
+      "Column3": "Ducto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Serie de tubos conectados para el transporte de sólidos, líquidos o gases por bombeo. No incluye acueducto."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "TDU",
+      "Column3": "Tipo de ducto"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "01",
+      "Column3": "INDUSTRIA Y SERVICIOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0108",
+      "Column3": "GESTIÓN DE RESIDUOS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "010803",
+      "Column3": "Planta de tratamiento de residuos"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Instalaciones donde se realiza algún tipo de clasificación o tratamiento a los residuos. Incluye plantas de residuos patológicos plantas recicladoras, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  " GEOGRAFÍA SOCIAL DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0201",
+      "Column3": "ASENTAMIENTO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020103",
+      "Column3": "Asentamiento humano"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Porción del territorio en donde se asienta la población o se evidencia la presencia de una acción estatal. Se caracteriza por presentar viviendas, aunque estén deshabitadas, edificios donde se asientan dependencias oficiales, edificios donde se concentran las actividades administrativas de explotaciones productivas o alguna infraestructura importante. "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico",
+      "Column5": "En revisión"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CA1",
+      "Column3": "Función político administrativa"
+    },
+    {
+      "Column2": "CA3",
+      "Column3": "Cantidad de población"
+    },
+    {
+      "Column2": "BA1",
+      "Column3": "Código de asentamiento humano"
+    },
+    {
+      "Column2": "TYA",
+      "Column3": "Tipo de asentamiento"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0201",
+      "Column3": "ASENTAMIENTO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020104",
+      "Column3": "Planta urbana"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Área urbana aproximada que incluye la zona contigua de amanzanamiento edificado, cuyos límites son reconocibles."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0205",
+      "Column3": "POLÍTICA Y ADMINISTRACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020504",
+      "Column3": "Municipio/Comuna"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Asiento de la autoridad comunal."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0206",
+      "Column3": "EDUCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020601",
+      "Column3": "Establecimiento educativo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Es la unidad institucional donde se registra la oferta educativa, cuya creación o autorización se registra bajo un acto administrativo - ley, decreto, resolución o disposición. Existe en él una autoridad máxima coo responsable pedagógico administrativo, con una planta funcional asignada, para impartir educacióna un grupo de alumnos. El establecimiento constituye la unidad organizacional que contiene en su interior a la/s unidades educativas, las cuales forman parte del establecimiento y se corresponden con cada uno de los niveles de enseñanza para los cuales se imparte educación. Un establecimiento puede funcionar en una o varias localizaciones geográficas. En caso de ser varias se compone de sede/s y anexo/s. Sede: es la localización donde cumple sus funciones la máxima autoridad pedagógica administrativa del establecimiento. La sede puede no tener alumnos. Anexo: es la localización donde funciona una sección o grupo de secciones que depende pedagógica y administrativamente de una localización sede y funciona en otro lugar geográfico (Ministerio de Educación, Ciencia y Tecnología, 2018)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "CUE",
+      "Column3": "Clave única de establecimiento"
+    },
+    {
+      "Column2": "GES",
+      "Column3": "Sector de Gestión"
+    },
+    {
+      "Column2": "AMG",
+      "Column3": "Ámbito geográfico"
+    },
+    {
+      "Column2": "MDE",
+      "Column3": "Modalidad de educación"
+    },
+    {
+      "Column2": "NEN",
+      "Column3": "Nivel de enseñanza"
+    },
+    {
+      "Column2": "PRE",
+      "Column3": "Precisión"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0206",
+      "Column3": "EDUCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020602",
+      "Column3": "Institución universitaria"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Institución de enseñanza superior que otorga distintos grados académicos. Incluye Universidades e Institutos Universitarios. "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "IDI",
+      "Column3": "Identificador de institución"
+    },
+    {
+      "Column2": "TDI",
+      "Column3": "Tipo de institución"
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "02",
+      "Column3": "GEOGRAFÍA SOCIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0208",
+      "Column3": "SALUD"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "020801",
+      "Column3": "Edificio de salud"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Construcción destinada a la asistencia de personas. Incluye hospital, sala de primeros auxilios, puesto asistencial, dispensario, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "TRANSPORTE DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0301",
+      "Column3": "FERROVIARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030101",
+      "Column3": "Ferrocarril"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Vía férrea constituida por dos o tres rieles o carriles paralelos entre sí, sobre los cuales encajan y giran las ruedas de los trenes (incluye varios modos: ferrocarril, subterráneo, tranvía, entre otros)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "RGC",
+      "Column3": "Trocha"
+    },
+    {
+      "Column2": "LTN",
+      "Column3": "Contador de carriles"
+    },
+    {
+      "Column2": "RAL",
+      "Column3": "Ramal "
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "LOC",
+      "Column3": "Ubicación vertical relativa"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0301",
+      "Column3": "FERROVIARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030102",
+      "Column3": "Estación ferroviaria"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Instalación edilicia y demás dependencias donde regularmente se detiene el transporte ferroviario, suben y bajan pasajeros y / o mercancías. Incluye apeadero, embarcadero y parada."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0302",
+      "Column3": "VIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030201",
+      "Column3": "Red vial"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Trayecto diseñado con una superficie especialmente preparada, que se mantiene para ser usado por vehículos generalmente a motor."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "RTN",
+      "Column3": "Designación de red vial"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "RST",
+      "Column3": "Tipo de superficie de vía"
+    },
+    {
+      "Column2": "TYP",
+      "Column3": "Tipo de vía de transporte"
+    },
+    {
+      "Column2": "MES",
+      "Column3": "Separación vial"
+    },
+    {
+      "Column2": "HCT",
+      "Column3": "Jurisdicción de vía de transporte"
+    },
+    {
+      "Column2": "LOC",
+      "Column3": "Ubicación vertical relativa"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0302",
+      "Column3": "VIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030202",
+      "Column3": "Calle"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Vía de transporte para circulación en el interior de una planta urbana y que no es parte del acceso a la misma. Delimita las manzanas."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "RST",
+      "Column3": "Tipo de superficie de vía"
+    },
+    {
+      "Column2": "MES",
+      "Column3": "Separación vial"
+    },
+    {
+      "Column2": "HCT",
+      "Column3": "Jurisdicción de vía de transporte"
+    },
+    {
+      "Column2": "LOC",
+      "Column3": "Ubicación vertical relativa"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0302",
+      "Column3": "VIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030203",
+      "Column3": "Huella"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Camino de acceso y recorrido de establecimientos. Incluye caminos de poca importancia que se desprenden de caminos de tierra, caminos demarcados en loteos, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0302",
+      "Column3": "VIAL"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030208",
+      "Column3": "Estación de ómnibus"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Predio destinado a la maniobra de ómnibus nacionales e internacionales, carga, ascenso y descenso de pasajeros. Puede o no tener aduana."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0304",
+      "Column3": "FLUVIAL, MARÍTIMO Y LACUSTRE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030403",
+      "Column3": "Puerto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Lugar dotado de instalaciones de terminales y de transferencia para la carga y descarga de mercaderías o pasajeros. Incluye atracadero para balsas, clubes deportivos y cualquier otra instalación para transferencia de pasajeros y / o mercaderías. No incluye puerto natural."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "FUC",
+      "Column3": "Uso. Funcion"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0304",
+      "Column3": "FLUVIAL, MARÍTIMO Y LACUSTRE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030405",
+      "Column3": "Vía navegable"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Vía  definida y mantenida por autoridad competente que permite la navegación de una embarcación. Incluye traza de canales en el Río de la Plata, accesos a puertos de La Plata, Buenos Aires y Bahía Blanca, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "HVA",
+      "Column3": "Hidrovía"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0305",
+      "Column3": "AÉREO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030501",
+      "Column3": "Aeródromo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona definida sobre tierra o agua (incluidos eventuales edificios, instalaciones y equipos), cuyo propósito es ser utilizada total o parcialmente para la llegada, salida y movimiento en superficie de aeronaves y / o helicópteros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "IKO",
+      "Column3": "Código OACI de aeródromo"
+    },
+    {
+      "Column2": "ITA",
+      "Column3": "Código IATA de aeródromo"
+    },
+    {
+      "Column2": "ANA",
+      "Column3": "Código nacional de aeródromo"
+    },
+    {
+      "Column2": "AER",
+      "Column3": "Aerolíneas"
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0305",
+      "Column3": "AÉREO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030502",
+      "Column3": "Ruta aérea (ex línea de flujo ortodrómica)"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que representa el corredor aéreo definido entre el aeródromo de origen y el aeródromo de destino."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "ILO",
+      "Column3": "Identificador ortodrómico"
+    },
+    {
+      "Column2": "AER",
+      "Column3": "Aerolíneas"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0307",
+      "Column3": "CRUCES, ENLACES Y OBRAS DE ARTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030701",
+      "Column3": "Puente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Estructura que asegura la continuidad de una vía de transporte (red vial, calle, ferrocarril, entre otros) sobre un obstáculo natural o artificial del terreno (corriente de agua, canal, entre otros)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "TUP",
+      "Column3": "Tipo de uso de puente"
+    },
+    {
+      "Column2": "MCC",
+      "Column3": "Tipo de material estructural"
+    },
+    {
+      "Column2": "BSC",
+      "Column3": "Tipo de puente"
+    },
+    {
+      "Column2": "FEO",
+      "Column3": "Orientación del objeto"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "03",
+      "Column3": "TRANSPORTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0307",
+      "Column3": "CRUCES, ENLACES Y OBRAS DE ARTE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "030703",
+      "Column3": "Túnel"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Paso subterráneo abierto artificialmente para establecer una comunicación a través de una montaña, por debajo de una corriente de agua u otro obstáculo."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "FEO",
+      "Column3": "Orientación del objeto"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "HIDROGRAFÍA Y OCEANOGRAFÍA DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "04",
+      "Column3": "HIDROGRAFÍA Y OCEANOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0401",
+      "Column3": "COSTAS Y ZONAS LITORALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "040104",
+      "Column3": "Isla"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Parte de la superficie terrestre rodeada de agua y de dimensiones menores que un continente. "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "04",
+      "Column3": "HIDROGRAFÍA Y OCEANOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0403",
+      "Column3": "PROFUNDIDADES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "040301",
+      "Column3": "Curva batimétrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea trazada en un espejo de agua, corriente de agua, mar u océano, que une puntos de igual profundidad respecto de un nivel de referencia definido. También se la denomina isobata."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CRV",
+      "Column3": "Valor de curva de nivel "
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "04",
+      "Column3": "HIDROGRAFÍA Y OCEANOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0411",
+      "Column3": "AGUAS CONTINENTALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "041103",
+      "Column3": "Corriente de agua"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea/Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Flujo natural de agua que sigue los desniveles del terreno, siendo arreico o desembocando en otra corriente de agua, en un espejo de agua o en el mar."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "HYP",
+      "Column3": "Régimen hidrológico"
+    },
+    {
+      "Column2": "SI1",
+      "Column3": "Sistema hídrico"
+    },
+    {
+      "Column2": "CU1",
+      "Column3": "Cuenca hídrica superficial"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "04",
+      "Column3": "HIDROGRAFÍA Y OCEANOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0411",
+      "Column3": "AGUAS CONTINENTALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "041105",
+      "Column3": "Dique"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto/línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Terraplén (de terreno natural o material) destinado a detener o estancar el escurrimiento del agua en su curso, a los efectos de su almacenamiento para fines rurales o industriales."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "FUN",
+      "Column3": "Estado"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "04",
+      "Column3": "HIDROGRAFÍA Y OCEANOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0411",
+      "Column3": "AGUAS CONTINENTALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "041108",
+      "Column3": "Espejo de agua"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Cuerpo natural o artificial de agua, dulce o salada, cuyo aporte proviene de corrientes de agua, afloramientos subterráneos o precipitaciones. Quedan excluidos los embalses y los embalses rurales."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "HYP",
+      "Column3": "Régimen hidrológico"
+    },
+    {
+      "Column2": "SI1",
+      "Column3": "Sistema hídrico"
+    },
+    {
+      "Column2": "CU1",
+      "Column3": "Cuenca hídrica superficial"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "GEOGRAFÍA FÍSICA DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0501",
+      "Column3": "HIPSOGRAFÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "050101",
+      "Column3": "Curva de nivel"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que une puntos que tienen el mismo valor de altitud respecto al nivel medio del mar. También se la denomina isohipsa o curva hipsométrica."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "HQC",
+      "Column3": "Tipo de representación hipsográfica"
+    },
+    {
+      "Column2": "CRV",
+      "Column3": "Valor de curva de nivel"
+    },
+    {
+      "Column2": "MO2",
+      "Column3": "Método de obtención curva"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0502",
+      "Column3": "GEOMORFOLOGÍA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "050203",
+      "Column3": "Cerro"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Elevación que sobresale de los lineamientos serranos o montañosos. Incluye monte, morro, nevado, pico, entre otros. No incluye volcán. El nevado es un cerro de gran altura que posee nieves perpetuas en su cumbre y permanece blanco durante todo el año. Un pico es una elevación montañosa, de cumbre aguda y puntiaguda con flancos escarpados. "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "MSL",
+      "Column3": "Altitud"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0506",
+      "Column3": "VULCANISMO Y SISMICIDAD"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "050601",
+      "Column3": "Volcán"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Fractura u orificio de la superficie de la tierra a través del cual ascienden magma y gases que provienen de zonas profundas y que liberan importantes cantidades de energía térmica y cinética. Con el mismo nombre se denomina a la elevación topográfica formada por lava, materiales piroclásticos o ambos.     "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "MSL",
+      "Column3": "Altitud"
+    },
+    {
+      "Column2": "VOA",
+      "Column3": "Estado de actividad"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0509",
+      "Column3": "COBERTURA TERRESTRE"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "RASTER",
+      "Column2": "050901",
+      "Column3": "Cobertura de la tierra"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Pixel"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "La cobertura de suelo representa la cobertura física y biológica de la superficie de la tierra, interpretada mediante imágenes satelitales. Se trata de un producto derivado de información satelital. Identifica las diferentes formas de ocupación del territorio. (IDECOR - 2021)"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "GID",
+      "Column3": "Identificador"
+    },
+    {
+      "Column2": "RTR",
+      "Column3": "Información del raster"
+    },
+    {
+      "Column2": "UMM",
+      "Column3": "Unidad minima mapeable"
+    },
+    {
+      "Column2": "AMM",
+      "Column3": "Ancho minimo mapeable"
+    },
+    {
+      "Column2": "DCT",
+      "Column3": "Año de construcción"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    null,
+    {
+      "Column3": "Denominación"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Categorias",
+      "Column2": 1,
+      "Column3": "Áreas cultivadas y/o manejadas"
+    },
+    {
+      "Column2": 2,
+      "Column3": "Áreas naturales terrestres vegetadas"
+    },
+    {
+      "Column2": 3,
+      "Column3": "Vegetación natural anegada/inundada o acuática"
+    },
+    {
+      "Column2": 4,
+      "Column3": "Superficies artificiales y áreas asociadas"
+    },
+    {
+      "Column2": 5,
+      "Column3": "Areas naturales sin vegetación"
+    },
+    {
+      "Column2": 6,
+      "Column3": "Cuerpos de agua artificiales"
+    },
+    {
+      "Column2": 7,
+      "Column3": "Agua, nieve o hielo natural"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0513",
+      "Column3": "ÁREAS A CONSERVAR"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "051301",
+      "Column3": "Áreas protegidas"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Área de tierra y/o mar destinada a la protección y mantenimiento de la diversidad biológica y de los recursos naturales y culturales asociados."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "TAP",
+      "Column3": "Tipo de área protegida"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "DCT",
+      "Column3": "Fecha de construcción"
+    },
+    {
+      "Column2": "CAA",
+      "Column3": "Autoridad responsable"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0513",
+      "Column3": "ÁREAS A CONSERVAR"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "051302",
+      "Column3": "Reserva de biósfera"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Ecosistema terrestre o costero/ marino, o una combinación de los mismos, reconocido como tal en un plano internacional en el marco del Programa MAB (Hombre y la Atmósfera) de la UNESCO."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "DCT",
+      "Column3": "Fecha de construcción"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0513",
+      "Column3": "ÁREAS A CONSERVAR"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "051303",
+      "Column3": "Sitio RAMSAR"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Sitio de humedal que se enmarca dentro de La Convención sobre los Humedales de Importancia Internacional, llamada Convención de Ramsar, que incluye pantanos y marismas, lagos y ríos, pastizales húmedos y turberas, oasis, estuarios, deltas y bajos de marea, zonas marinas próximas a las costas, manglares y arrecifes de coral, así como sitios artificiales como estanques piscícolas, arrozales, embalses y salinas."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "DCT",
+      "Column3": "Fecha de construcción"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "05",
+      "Column3": "GEOGRAFÍA FÍSICA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0513",
+      "Column3": "ÁREAS A CONSERVAR"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "051304",
+      "Column3": "Bosque nativo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Áreas  de protección ambiental a los bosques nativos según lo establecido en la Ley  de 26.331."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CAM",
+      "Column3": "Categoría de gestión del área de conservación "
+    },
+    {
+      "Column2": "DCT",
+      "Column3": "Fecha de construcción"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "DEMARCACIÓN DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070101",
+      "Column3": "Línea de base normal"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea de bajamar a lo largo de la costa. Es la isobata de 0 metro, que corresponde al nivel del datum vertical local."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070102",
+      "Column3": "Línea de base recta"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea recta que une puntos sobre la línea de base normal. Las líneas de base archipelágicas rectas definen la periferia de un grupo  de islas."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070103",
+      "Column3": "Línea de costa"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que marca el contacto entre una masa de tierra y un cuerpo de agua, establecida por la línea de las más bajas bajamares, ya sea en las aguas litorales o interiores."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070104",
+      "Column3": "Límite del lecho y subsuelo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea demarcatoria de aguas jurisdiccionales en los fondos fluviales, definida en el Tratado del Río de la Plata y su Frente Marítimo."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070105",
+      "Column3": "Límite lateral marítimo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea de deslinde entre mares jurisdiccionales contiguos, definida en el Tratado del Río de la Plata su Frente Marítimo."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070106",
+      "Column3": "Límite del Mar Territorial Argentino"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Delimitación exterior del Mar Territorial Argentino, el cual se extiende hasta una distancia de 12 millas marinas a partir de las líneas de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070107",
+      "Column3": "Mar Territorial Argentino"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona marítima que se extiende hasta una distancia de 12 millas marinas a partir de la línea de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070108",
+      "Column3": "Límite de la Zona Contigua Argentina"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Delimitación exterior de la Zona Contigua Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070109",
+      "Column3": "Zona Contigua Argentina"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona marítima que se extiende desde el límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070110",
+      "Column3": "Límite de la Zona Económica Exclusiva Argentina"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Delimitación exterior de la Zona Económica Exclusiva Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070111",
+      "Column3": "Zona Económica Exclusiva Argentina"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona marítima que se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070112",
+      "Column3": "Límite de la Plataforma Continental"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Delimitación exterior de la Plataforma Continental, la cual comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas medidas a partir de las líneas de base, en los casos en que el borde exterior no llegue a esa distancia."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070113",
+      "Column3": "Plataforma Continental"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona marítima que comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas contadas desde la línea de base, en los casos en que el borde exterior del margen continental no llegue a esa distancia."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070114",
+      "Column3": "Límite de gobierno local"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que constituye la representación de la traza demarcadora que delimita un gobierno local de menor jerarquía que un departamento o partido."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "VLP",
+      "Column3": "Validación de límite"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070115",
+      "Column3": "Límite interdepartamental o de partido"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que constituye la representación de la traza demarcadora que delimita la jurisdicción de un departamento o partido de otro."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "VLP",
+      "Column3": "Validación de límite"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070116",
+      "Column3": "Límite interprovincial"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que constituye la representación de la traza demarcadora que delimita una provincia de otra."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "VLJ",
+      "Column3": "Validación de límite interprovincial"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070117",
+      "Column3": "Límite internacional"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que constituye la representación de la traza demarcadora que delimita un país."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070118",
+      "Column3": "Límite de Zona de Frontera"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Línea"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Línea que constituye la representación de la traza demarcadora que delimita la Zona de Frontera."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070119",
+      "Column3": "Zona de Frontera"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Zona adyacente al límite internacional, que constituye una zona de seguridad destinada a complementar las previsiones territoriales de la defensa nacional y / o un área prioritaria para su desarrollo."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "TZ1",
+      "Column3": "Denominación de zona de frontera"
+    },
+    {
+      "Column2": "TZZ",
+      "Column3": "Tipo de zona de frontera"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070120",
+      "Column3": "Municipio"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "División político administrativa de tercer orden, que incluye comunas, juntas vecinales y demás formas de gobierno local."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CMU",
+      "Column3": "Código Municipio"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070121",
+      "Column3": "Departamento"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "División político administrativa de segundo orden. Incluye partido y comuna."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CDE",
+      "Column3": "Código Departamento"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070122",
+      "Column3": "Provincia"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "División político territorial de primer orden. Incluye la Ciudad Autónoma de Buenos Aires (CABA)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "CPR",
+      "Column3": "Código Provincia"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070123",
+      "Column3": "País"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Nación jurídicamente organizada."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0701",
+      "Column3": "FRONTERAS Y LÍMITES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070124",
+      "Column3": "Paso fronterizo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Punto geográfico (hecho físico) que permite ingresar o salir de un país."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0703",
+      "Column3": "REDES GEODÉSICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070301",
+      "Column3": "Red RAMSAC"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Red de estaciones GPS/GNSS permanentes que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007. Esta red es denominada Red Argentina de Monitoreo Satelital Continuo (RAMSAC)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "CER",
+      "Column3": "Código de estación RAMSAC"
+    },
+    {
+      "Column2": "AI1",
+      "Column3": "Año de instalación"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0703",
+      "Column3": "REDES GEODÉSICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070302",
+      "Column3": "Red Geocéntrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Red de pilares o mojones de primer orden que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "MRG",
+      "Column3": "Marco de referencia geodésico"
+    },
+    {
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "PA1",
+      "Column3": "PASMA 1"
+    },
+    {
+      "Column2": "PA2",
+      "Column3": "PASMA 2"
+    },
+    {
+      "Column2": "PA3",
+      "Column3": "PASMA 3"
+    },
+    {
+      "Column2": "PR1",
+      "Column3": "Provincial 1"
+    },
+    {
+      "Column2": "PR2",
+      "Column3": "Provincial 2"
+    },
+    {
+      "Column2": "PR3",
+      "Column3": "Provincial 3"
+    },
+    {
+      "Column2": "PSG",
+      "Column3": "POSGAR"
+    },
+    {
+      "Column2": "DEN",
+      "Column3": "Densificación POSGAR"
+    },
+    {
+      "Column2": "RNI",
+      "Column3": "Red de nivelación"
+    },
+    {
+      "Column2": "LAG",
+      "Column3": "Latitud grados"
+    },
+    {
+      "Column2": "LAM",
+      "Column3": "Latitud minutos"
+    },
+    {
+      "Column2": "LAS",
+      "Column3": "Latitud segundos"
+    },
+    {
+      "Column2": "LGR",
+      "Column3": "Longitud grados"
+    },
+    {
+      "Column2": "LOM",
+      "Column3": "Longitud minutos"
+    },
+    {
+      "Column2": "LOS",
+      "Column3": "Longitud segundos"
+    },
+    {
+      "Column2": "AEL",
+      "Column3": "Altura elipsoidal"
+    },
+    {
+      "Column2": "PAL",
+      "Column3": "Tipo de marca"
+    },
+    {
+      "Column2": "EPG",
+      "Column3": "Estado de punto geodésico"
+    },
+    {
+      "Column2": "ULV",
+      "Column3": "Última visita"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0703",
+      "Column3": "REDES GEODÉSICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070303",
+      "Column3": "Red Altimétrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Red de pilares o mojones que poseen una altura referida al nivel medio del mar, a la que se la denomina cota."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "CE1",
+      "Column3": "Código de estación"
+    },
+    {
+      "Column2": "ORN",
+      "Column3": "Orden red nivelación"
+    },
+    {
+      "Column2": "AC1",
+      "Column3": "Año de construcción"
+    },
+    {
+      "Column2": "AM1",
+      "Column3": "Año de medición"
+    },
+    {
+      "Column2": "CO1",
+      "Column3": "Cota"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0703",
+      "Column3": "REDES GEODÉSICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070304",
+      "Column3": "Red gravimétrica"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Red de pilares o mojones que poseen un valor de aceleración de la gravedad en el datum gravimétrico por el Instituto Geográfico Nacional."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FUN",
+      "Column3": "Estado "
+    },
+    {
+      "Column2": "CE1",
+      "Column3": "Código de estación"
+    },
+    {
+      "Column2": "ORG",
+      "Column3": "Orden red gravimétrica"
+    },
+    {
+      "Column2": "AC1",
+      "Column3": "Año de construcción"
+    },
+    {
+      "Column2": "AM1",
+      "Column3": "Año de medición"
+    },
+    {
+      "Column2": "VG1",
+      "Column3": "Valor de gravedad"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0705",
+      "Column3": "PLANEAMIENTO URBANO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070503",
+      "Column3": "Usos de suelo"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "La clasificación del uso de suelo está definida por las distintas categorías de espacios dentro de un municipio, en términos de los niveles de usos urbanos, de transición y rurales. (Mun SS de Jujuy - 2021)"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "COZ",
+      "Column3": "Código de zona",
+      "Column5": "En revisión"
+    },
+    {
+      "Column2": "DSP",
+      "Column3": "Descripción del uso de suelo"
+    },
+    {
+      "Column2": "SDP",
+      "Column3": "Descripción de fuente (Ley, código o normativa)"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Area"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "07",
+      "Column3": "DEMARCACIÓN"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0705",
+      "Column3": "PLANEAMIENTO URBANO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "070504",
+      "Column3": "Ejido urbano"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Área urbana delimitada legalmente."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "DEFENSA Y SEGURIDAD DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "09",
+      "Column3": "DEFENSA Y SEGURIDAD"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0901",
+      "Column3": "INFRAESTRUCTURA DE DEFENSA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "090101",
+      "Column3": "Edificio de seguridad"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Construcción destinada al asiento de la autoridad encargada de la seguridad. "
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "TES",
+      "Column3": "Tipo de edificio de seguridad"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "09",
+      "Column3": "DEFENSA Y SEGURIDAD"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "0901",
+      "Column3": "INFRAESTRUCTURA DE DEFENSA"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "090103",
+      "Column3": "Cuartel de bomberos"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Punto"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Estructura preparada para almacenar el equipamiento necesario para apagar fuegos, incluyendo mangueras, vehículos, equipos de protección del personal, extintores de fuego, entre otros. Puede tener también dormitorios e instalaciones de trabajo como salas de reunión, entre otros."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "FNA",
+      "Column3": "Nombre geográfico"
+    },
+    {
+      "Column2": "GNA",
+      "Column3": "Término genérico"
+    },
+    {
+      "Column2": "NAM",
+      "Column3": "Término específico"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "CATASTRO BDyF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "11",
+      "Column3": "CATASTRO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "1101",
+      "Column3": "PARCELARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "110101",
+      "Column3": "Parcela"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Extensión territorial continua, deslindada por un polígono de límites conocidos, perteneciente a un propietario."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CCA",
+      "Column3": "Código parcelario"
+    },
+    {
+      "Column2": "PDA",
+      "Column3": "Código de identificación tributaria"
+    },
+    {
+      "Column2": "TPA",
+      "Column3": "Tipo de parcelario"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "NMP",
+      "Column3": "Número de plano"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "11",
+      "Column3": "CATASTRO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "1101",
+      "Column3": "PARCELARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "110102",
+      "Column3": "Macizo urbano"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Extension de territorio cuya superficie varía según su tipología y, por lo general, están totalmente rodeadas de vias de circulación. Se interpreta como macizo al perímetro conformado por la sucesión de los frentes y ochavas de las parcelas o líneas municipales de cada parcela urbana"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CCA",
+      "Column3": "Código parcelario"
+    },
+    {
+      "Column2": "TYM",
+      "Column3": "Tipo de macizo"
+    },
+    {
+      "Column2": "TPA",
+      "Column3": "Tipo de parcelario"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "11",
+      "Column3": "CATASTRO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "1101",
+      "Column3": "PARCELARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "110103",
+      "Column3": "Sección catastral"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Registro administrativo dependiente del Estado en el que se describen los bienes inmuebles."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CCA",
+      "Column3": "Código parcelario"
+    },
+    {
+      "Column2": "TPA",
+      "Column3": "Tipo de parcelario"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": "11",
+      "Column3": "CATASTRO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": "1101",
+      "Column3": "PARCELARIO"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": "110107",
+      "Column3": "Circunscripción"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Polígonos en los que un Partido (Departamento) se subdivide, pudiendo contener en conjunto o separadamente plantas urbanas, suburbanas y rurales (ARBA,2018)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CCA",
+      "Column3": "Código parcelario"
+    },
+    {
+      "Column2": "ARA",
+      "Column3": "Área"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ],
+  "UNIDADES GEOESTADÍSTICAS DByF": [
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": 12,
+      "Column3": "UNIDADES GEOESTADÍSTICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": 1201,
+      "Column3": "DIVISIONES CENSALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": 120101,
+      "Column3": "Fracción censal"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Unidad censal en que se divide cada departamento, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC,  2018)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CFN",
+      "Column3": "Código de fracción"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    },
+    null,
+    null,
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Clase",
+      "Column2": 12,
+      "Column3": "UNIDADES GEOESTADÍSTICAS"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Subclase",
+      "Column2": 1201,
+      "Column3": "DIVISIONES CENSALES"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "OG",
+      "Column2": 120102,
+      "Column3": "Radio censal"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Geometría",
+      "Column2": "Polígono"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Definición",
+      "Column2": "Unidad censal que forma parte de una fracción, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC, 2018)."
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Atributos",
+      "Column2": "CRO",
+      "Column3": "Código de radio"
+    },
+    {
+      "Column2": "TRO",
+      "Column3": "Tipo de radio"
+    },
+    {
+      "Column2": "SAG",
+      "Column3": "Autoridad de fuente"
+    },
+    {
+      "FICHAS DE DByF \nCATÁLOGO DE OBJETOS GEOGRÁFICOS \nINFRAESTRUCTURA DE DATOS ESPACIALES DE LA REPÚBLICA ARGENTINA ": "Simbología"
+    }
+  ]
+}
