@@ -1,0 +1,31 @@
+# Installed packages — re-created inside the image by pnpm install
+node_modules/
+.pnpm-store/
+
+# Previous build output — the builder stage produces a fresh one
+.next/
+out/
+
+# Version control
+.git/
+.gitignore
+
+# Editor / OS artefacts
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docs and licences (not needed at build time)
+*.md
+LICENSE
+
+# Dead CSS file not imported by the active build
+styles/
+
+# Secrets — never bake these into the image
+.env
+.env.*
+!.env.example

@@ -1,0 +1,1667 @@
+[
+  {
+    "nombre": "INDUSTRIA Y SERVICIOS",
+    "codigo": 1,
+    "contenido": "Comprende los objetos geográficos relacionados con la extracción y procesamiento de recursos naturales, producción agropecuaria, minería, industrialización, energía, comunicaciones, almacenamiento y logística, tratamiento y gestión de los residuos (IDERA, 2015).",
+    "subcategorias": [],
+    "color": "#FFA500",
+    "icon": "Factory"
+  },
+  {
+    "nombre": "INFRAESTRUCTURA SOCIAL",
+    "codigo": 2,
+    "contenido": "Comprende los objetos geográficos que se relacionan en el sentido más amplio con los aspectos sociales de la población. A esta clase pertenecen los dominios de la administración, el comercio, el turismo, el ocio, la educación, la cultura, la salud y la ciencia (IDERA, 2018 - INFUETUR 2024).",
+    "subcategorias": [
+      {
+        "nombre": "RECREACIÓN",
+        "codigo": 204,
+        "contenido": "Objetos geográficos que se relacionan con las actividades recreativas y de ocio de las personas (IGN, 2015).",
+        "objetos": [
+          {
+            "nombre": "Atractivos turísticos",
+            "codigo": 20404,
+            "geometria": "Punto/polígono",
+            "definicion": "Conjunto de lugares, bienes, costumbres y acontecimientos que por sus características, propias o de ubicación en un contexto, atraen el interés del visitante.",
+            "atributos": [
+              {
+                "codigo": "FNA",
+                "nombre": "Nombre geográfico",
+                "denominacion": "Nombre geográfico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre completo que se utiliza para designar un objeto en un mapa o carta. Está formado por el término genérico y el término específico. Ejemplo: río Mendoza.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "GNA",
+                "nombre": "Término genérico",
+                "denominacion": "Término genérico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte del nombre geográfico que indica el tipo de objeto que identifica. Ejemplo: río, monte, glaciar, establecimiento.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NAM",
+                "nombre": "Término específico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte de un nombre geográfico que acompaña al término genérico y que identifica e individualiza un objeto geográfico determinado. Ejemplo: Paraná en río Paraná; Upsala en glaciar Upsala; Las Marías en establecimiento Las Marías; Esperanza en el caso de bahía Esperanza.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "FUN",
+                "nombre": "Estado",
+                "denominacion": "Estado",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Clasificación del estado constructivo de estructuras y/o equipos que componen una instalación.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "2",
+                    "etiqueta": "Abandonado",
+                    "definicion": "Equipo y/o estructuras dejados de lado, pudiendo sufrir daños o degradación."
+                  },
+                  {
+                    "codigo": "4",
+                    "etiqueta": "Desmantelado",
+                    "definicion": "La instalación no funciona. El equipo se ha retirado, pudiendo quedar restos de la estructura."
+                  },
+                  {
+                    "codigo": "6",
+                    "etiqueta": "Activo",
+                    "definicion": "La instalación es capaz de funcionar completamente."
+                  },
+                  {
+                    "codigo": "9",
+                    "etiqueta": "En construcción",
+                    "definicion": "La instalación se encuentra en proceso de construcción, pero aún no es completamente funcional. Incluye la etapa de reparación."
+                  },
+                  {
+                    "codigo": "10",
+                    "etiqueta": "Nuevo",
+                    "definicion": "Instalación nueva, que es completamente funcional y que fue creada desde cero."
+                  },
+                  {
+                    "codigo": "11",
+                    "etiqueta": "Ampliado",
+                    "definicion": "Instalación que constituye una nueva construcción a una ya existente"
+                  }
+                ]
+              },
+              {
+                "codigo": "CLT",
+                "nombre": "Clase de atractivo",
+                "denominacion": "Clase de atractivo",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Define los atributos que tiene un elemento y motivan la visita turística dependiendo de su naturaleza.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Sitios naturales",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos. Elementos de la naturaleza que motivan al sujeto a dejar su lugar de origen por un determinado tiempo, con la finalidad de satisfacer necesidades de recreación y esparcimiento. Por ejemplo: montañas, ambientes lacustres, ríos, fenómenos geológicos, etc."
+                  },
+                  {
+                    "codigo": "2",
+                    "etiqueta": "Manifestaciones culturales",
+                    "definicion": "Son los elementos donde interviene o ha intervenido la mano del hombre en el paso del tiempo. A diferencia de los naturales, estos son creados por el hombre y pueden ser históricos o contemporáneos. Como por ejemplo; sitios históricos, ruinas, salas de conferencia, museos, zoológicos, parques de diversiones, etc.."
+                  }
+                ]
+              },
+              {
+                "codigo": "SIT",
+                "nombre": "Sitio de interes turístico",
+                "denominacion": "Sitio de interés turístico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Clasificación de sitios de interés para el turista/visitante",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "20102",
+                    "etiqueta": "Sitio de interés",
+                    "definicion": "Lugar declarado de importancia o de interés. Incluye sitio arqueológico, sitio histórico, entre otros. No incluye ruinas."
+                  },
+                  {
+                    "codigo": "20106",
+                    "etiqueta": "Ruina",
+                    "definicion": "Construcciones semidestruidas por acción del tiempo, antrópica o acontecimiento natural, que tienen reconocido valor histórico."
+                  },
+                  {
+                    "codigo": "20201",
+                    "etiqueta": "Cementerio",
+                    "definicion": "Espacio público o privado reservado para dar sepultura. Incluye cementerio parque, entre otros."
+                  },
+                  {
+                    "codigo": "20202",
+                    "etiqueta": "Refugio",
+                    "definicion": "Estructura destinada a dar albergue eventualmente en zonas carentes de medios o bajo condiciones adversas."
+                  },
+                  {
+                    "codigo": "20203",
+                    "etiqueta": "Monumento",
+                    "definicion": "Obra arquitectónica o artística, sea conmemorativa o histórica. Incluye estatua, fuente, busto, inscripción, monolito, calvario, entre otros."
+                  },
+                  {
+                    "codigo": "20204",
+                    "etiqueta": "Espacio verde",
+                    "definicion": "Terreno reservado en toda planta urbana como espacio destinado a jardines para recreo y expansión de la población. Incluye plaza, plaza seca, rotonda, entre otros."
+                  },
+                  {
+                    "codigo": "20301",
+                    "etiqueta": "Complejo comercial",
+                    "definicion": "Instalación que consiste en locales comerciales y puede tener locales gastronómicos, de entretenimiento y de otros rubros. Puede contar con una amplia zona de estacionamiento. Incluye supermercado, mercado, mercado concentrador, entre otros."
+                  },
+                  {
+                    "codigo": "20302",
+                    "etiqueta": "Centro de convenciones",
+                    "definicion": "Área donde existen instalaciones permanentes para realizar convenciones y exhibiciones."
+                  },
+                  {
+                    "codigo": "20401",
+                    "etiqueta": "Anfiteatro",
+                    "definicion": "Lugar descubierto en forma de semicírculo, destinado a acoger espectáculos."
+                  },
+                  {
+                    "codigo": "20402",
+                    "etiqueta": "Instalación deportiva y de esparcimiento",
+                    "definicion": "Instalación destinada al desarrollo de actividades sociales, recreativas y deportivas. Hace referencia a club, balneario, polígono de tiro, conjunto de canchas, campo de golf, campo de polo, pista de carreras, estadio, gimnasios urbanos, postas deportiva/aeróbica, entre otros."
+                  },
+                  {
+                    "codigo": "20403",
+                    "etiqueta": "Centro de esquí",
+                    "definicion": "Área que dispone de pistas de esquí y medios de elevación. Puede contener hoteles y espacio para usar trineos."
+                  },
+                  {
+                    "codigo": "20501",
+                    "etiqueta": "Casa de gobierno",
+                    "definicion": "Asiento del Poder Ejecutivo de la Nación o Provincia."
+                  },
+                  {
+                    "codigo": "20502",
+                    "etiqueta": "Congreso",
+                    "definicion": "Asiento del Poder Legislativo de la Nación, Provincia o Ciudad Autónoma de Buenos Aires. También se lo denomina Legislatura."
+                  },
+                  {
+                    "codigo": "20504",
+                    "etiqueta": "Municipalidad",
+                    "definicion": "Asiento de la autoridad comunal."
+                  },
+                  {
+                    "codigo": "20509",
+                    "etiqueta": "Centro cívico",
+                    "definicion": "Equipamiento de carácter público para la prestación de servicios y actividades socioculturales, que actúa como lugar polivalente para facilitar el encuentro de personas, con el fin de fomentar la participación activa de la ciudadanía."
+                  },
+                  {
+                    "codigo": "20701",
+                    "etiqueta": "Edificio religioso",
+                    "definicion": "Construcción destinada a la práctica de actividades religiosas."
+                  },
+                  {
+                    "codigo": "20702",
+                    "etiqueta": "Edificio de cultura",
+                    "definicion": "Construcción destinada a la manifestación de expresiones culturales y artísticas."
+                  },
+                  {
+                    "codigo": "30403",
+                    "etiqueta": "Puerto",
+                    "definicion": "Lugar dotado de instalaciones de terminales y de transferencia para la carga y descarga de mercaderías o pasajeros. Incluye atracadero para balsas, clubes deportivos y cualquier otra instalación para transferencia de pasajeros y / o mercaderías. No incluye puerto natural."
+                  },
+                  {
+                    "codigo": "30404",
+                    "etiqueta": "Muelle",
+                    "definicion": "Obra construida sobre el agua, afianzada en el lecho acuático por medio de bases que la sostienen firmemente, para facilitar tareas de atraque de embarcaciones, carga, descarga, embarque."
+                  },
+                  {
+                    "codigo": "37001",
+                    "etiqueta": "Puente",
+                    "definicion": "Estructura que asegura la continuidad de una vía de transporte (red vial, calle, ferrocarril, entre otros) sobre un obstáculo natural o artificial del terreno (corriente de agua, canal, entre otros)."
+                  },
+                  {
+                    "codigo": "30804",
+                    "etiqueta": "Parador",
+                    "definicion": "Predio a la vera de una vía de comunicación, con infraestructura de comedor, minimercados, duchas, descanso, estacionamientos y comunicaciones."
+                  },
+                  {
+                    "codigo": "40102",
+                    "etiqueta": "Playa",
+                    "definicion": "Área ribereña de mar, corriente de agua o espejo de agua, que por lo general se caracteriza por ser una superficie casi plana de arena, conchilla o grava."
+                  },
+                  {
+                    "codigo": "40104",
+                    "etiqueta": "Isla",
+                    "definicion": "Parte de la superficie terrestre rodeada de agua y de dimensiones menores que un continente."
+                  },
+                  {
+                    "codigo": "41103",
+                    "etiqueta": "Corriente de agua",
+                    "definicion": "Flujo natural de agua que sigue los desniveles del terreno, siendo arreico o desembocando en otra corriente de agua, en un espejo de agua o en el mar."
+                  },
+                  {
+                    "codigo": "41105",
+                    "etiqueta": "Dique",
+                    "definicion": "Terraplén natural o artificial destinado a detener o estancar el escurrimiento del agua en su curso, a los efectos de su almacenamiento para fines rurales o industriales."
+                  },
+                  {
+                    "codigo": "41107",
+                    "etiqueta": "Embalse",
+                    "definicion": "Masa de agua retenida por una estructura artificial para su posterior aprovechamiento."
+                  },
+                  {
+                    "codigo": "41108",
+                    "etiqueta": "Espejo de agua",
+                    "definicion": "Cuerpo natural o artificial de agua, dulce o salada, cuyo aporte proviene de corrientes de agua, afloramientos subterráneos o precipitaciones. Quedan excluidos los embalses y los embalses rurales."
+                  },
+                  {
+                    "codigo": "41109",
+                    "etiqueta": "Fuente natural",
+                    "definicion": "Flujo natural de agua formado por drenaje en la superficie o por afloramiento de la freática subterránea."
+                  },
+                  {
+                    "codigo": "41110",
+                    "etiqueta": "Catarata, cascada, salto",
+                    "definicion": "Caída vertical de un curso de agua, producida por un brusco desnivel del cauce."
+                  },
+                  {
+                    "codigo": "41113",
+                    "etiqueta": "Humedal",
+                    "definicion": "Zona inundada con un régimen prácticamente permanente, regulada por factores climáticos. Incluye las extensiones de marismas, pantanos y turberas, o superficies cubiertas de aguas, sean éstas de régimen natural o artificial, permanentes o temporales, estancadas o corrientes, dulces, salobres o saladas, incluidas las extensiones de agua marina cuya profundidad en marea baja no exceda de seis metros."
+                  },
+                  {
+                    "codigo": "41114",
+                    "etiqueta": "Tajamar",
+                    "definicion": "Obra que une dos laderas que se aproximan mediante una cortina de tierra bien apisonada, con el objetivo de detener el escurrimiento del agua de lluvia, formando un espejo de agua."
+                  },
+                  {
+                    "codigo": "41301",
+                    "etiqueta": "Acuífero",
+                    "definicion": "Estrato o formación geológica permeable que permite la circulación y el almacenamiento de agua subterránea por sus poros y grietas. Incluye el acuífero Guaraní y el acuífero Puelche, entre otros."
+                  },
+                  {
+                    "codigo": "50202",
+                    "etiqueta": "Caverna, gruta, cueva",
+                    "definicion": "Cavidad subterránea y profunda, de formación natural o artificial, producida en la montaña o en la roca."
+                  },
+                  {
+                    "codigo": "50203",
+                    "etiqueta": "Cerro",
+                    "definicion": "Elevación que sobresale de los lineamientos serranos o montañosos. Incluye monte, morro, nevado, pico, entre otros. No incluye volcán. El nevado es un cerro de gran altura que posee nieves perpetuas en su cumbre y permanece blanco durante todo el año. Un pico es una elevación montañosa, de cumbre aguda y puntiaguda con flancos escarpados."
+                  },
+                  {
+                    "codigo": "50204",
+                    "etiqueta": "Hoya",
+                    "definicion": "Depresión cerrada del terreno, en donde puede existir presencia de agua."
+                  },
+                  {
+                    "codigo": "50205",
+                    "etiqueta": "Médano, duna",
+                    "definicion": "Acumulación de sedimentos sueltos, tamaño arena, que puede trasladarse por acción del viento. Puede estar en ambiente continental o costero."
+                  },
+                  {
+                    "codigo": "50206",
+                    "etiqueta": "Meseta",
+                    "definicion": "Forma de relieve elevada, plana y generalmente de gran extensión, limitada por barrancas, circundada por valles."
+                  },
+                  {
+                    "codigo": "50207",
+                    "etiqueta": "Mogote",
+                    "definicion": "Elevación del terreno, cónica, aislada, y con su parte superior trunca."
+                  },
+                  {
+                    "codigo": "50208",
+                    "etiqueta": "Sierra",
+                    "definicion": "Secuencia eslabonada de cerros que en conjunto presentan disposición longilínea y altitudes intermedias entre la cordillera y montañas. Incluye la serranía, entendida como una extensión sinónima de sierra, entre otros."
+                  },
+                  {
+                    "codigo": "50209",
+                    "etiqueta": "Barranca, acantilado",
+                    "definicion": "Desnivel pronunciado del terreno con pendiente variable y de origen diverso. En el caso de costa marina se denomina acantilado. En el caso de origen fluvial se denomina barranca. Si se encuentra en terreno no anexo a una corriente de agua o mar se denomina escarpa o barda."
+                  },
+                  {
+                    "codigo": "50210",
+                    "etiqueta": "quebrada, cañadon, garganta",
+                    "definicion": "Valle de paredes abruptas más o menos profundo que generalmente puede estar surcado por un curso de agua permanente o temporario. Incluye cajón, entre otros."
+                  },
+                  {
+                    "codigo": "50211",
+                    "etiqueta": "Cordillera",
+                    "definicion": "Secuencia eslabonada de cadenas orográficas de considerable altura con una disposición homogénea y pertenecientes al mismo proceso orogénico."
+                  },
+                  {
+                    "codigo": "50217",
+                    "etiqueta": "Valle",
+                    "definicion": "Forma de erosión fluvial cuyas laderas tienen alturas, pendientes y profundidades diversas."
+                  },
+                  {
+                    "codigo": "50601",
+                    "etiqueta": "Volcán",
+                    "definicion": "Conducto en la superficie de la Tierra, a través del cual asciende magma y gases asociados; también, se denomina a la estructura o forma (usualmente cónica) que se produce a partir del material eyectado (SEGEMAR, 2019)."
+                  },
+                  {
+                    "codigo": "50701",
+                    "etiqueta": "Glaciar",
+                    "definicion": "Masa de hielo permanente y en movimiento, alimentada desde un ventisquero y que en forma de lengua ocupa un valle moviéndose cuesta abajo. También incluye glaciar de circo, entre otros."
+                  },
+                  {
+                    "codigo": "50704",
+                    "etiqueta": "Morena",
+                    "definicion": "Lugar de acumulación heterogénea de detritos en cuanto a tamaño y composición que, llevada por el glaciar, es acumulada por éste."
+                  },
+                  {
+                    "codigo": "51301",
+                    "etiqueta": "Área protegida",
+                    "definicion": "Área de tierra y / o mar destinada a la protección y mantenimiento de la diversidad biológica y de los recursos naturales y culturales asociados."
+                  },
+                  {
+                    "codigo": "51302",
+                    "etiqueta": "Reserva de biosfera",
+                    "definicion": "Ecosistema terrestre o costero/ marino, o una combinación de los mismos, reconocido como tal en un plano internacional en el marco del Programa MAB (Hombre y la Atmósfera) de la UNESCO."
+                  },
+                  {
+                    "codigo": "51303",
+                    "etiqueta": "Sitio Ramsar",
+                    "definicion": "Sitio de humedal que se enmarca dentro de La Convención sobre los Humedales de Importancia Internacional, llamada Convención de Ramsar, que incluye pantanos y marismas, lagos y ríos, pastizales húmedos y turberas, oasis, estuarios, deltas y bajos de marea, zonas marinas próximas a las costas, manglares y arrecifes de coral, así como sitios artificiales como estanques piscícolas, arrozales, embalses y salinas."
+                  },
+                  {
+                    "codigo": "60301",
+                    "etiqueta": "Área de vegetación natural arbórea cerrada",
+                    "definicion": "Área de vegetación natural cubierta por bosque cerrado, sea de un estrato arbóreo o de más de un estrato arbóreo, sin emergentes o con emergentes."
+                  },
+                  {
+                    "codigo": "110104",
+                    "etiqueta": "Chacra",
+                    "definicion": "Extensión de territorio cuya superficie es superior a 12 hectáreas y no excede 120 hectáreas, totalmente rodeadas de vías de comunicación."
+                  },
+                  {
+                    "codigo": "110105",
+                    "etiqueta": "Quinta",
+                    "definicion": "Extensión de territorio cuya superficie es mayor a 1.5 hectáreas y no supere las 12 hectáreas."
+                  }
+                ]
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Mirador",
+            "codigo": 20405,
+            "geometria": "Punto",
+            "definicion": "Lugar, generalmente elevado, desde el que se puede observar la zona circundante. Por ejemplo, es fácilmente accesible en vehículo, está libre de vegetación que lo oculte y la topografía local permite una visión sin obstáculos de los elementos distantes.",
+            "atributos": [
+              {
+                "codigo": "FNA",
+                "nombre": "Nombre geográfico",
+                "denominacion": "Nombre geográfico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre completo que se utiliza para designar un objeto en un mapa o carta. Está formado por el término genérico y el término específico. Ejemplo: río Mendoza.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "GNA",
+                "nombre": "Término genérico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte del nombre geográfico que indica el tipo de objeto que identifica. Ejemplo: río, monte, glaciar, establecimiento.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NAM",
+                "nombre": "Término específico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte de un nombre geográfico que acompaña al término genérico y que identifica e individualiza un objeto geográfico determinado. Ejemplo: Paraná en río Paraná; Upsala en glaciar Upsala; Las Marías en establecimiento Las Marías; Esperanza en el caso de bahía Esperanza.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#FF3300"
+  },
+  {
+    "nombre": "TRANSPORTE",
+    "codigo": 3,
+    "contenido": "Comprende los objetos geográficos que se relacionan con el conjunto de instalaciones fijas, entidades de flujo y un sistema de control que permiten que personas y  bienes venzan la fricción del espacio geográfico 'eficientemente' a efectos de participar oportunamente en alguna actividad deseada (IDERA, 2015).",
+    "subcategorias": [],
+    "color": "#808080",
+    "icon": "Truck"
+  },
+  {
+    "nombre": "HIDROGRAFÍA Y OCEANOGRAFÍA",
+    "codigo": 4,
+    "contenido": "Comprende los objetos geográficos naturales y artificiales relacionados a los ambientes marino, fluvial y lacustre. Incluye las características físicas y químicas del agua, la biología marina y la geología marina (IDERA, 2015).",
+    "subcategorias": [
+      {
+        "nombre": "COSTAS Y ZONAS LITORALES",
+        "codigo": 401,
+        "contenido": "Objetos geográficos correspondientes a las costas y zonas del litoral marítimo, fluvial y lacustre (IGN, 2015).",
+        "objetos": [
+          {
+            "nombre": "Acceso a playa",
+            "codigo": 40106,
+            "geometria": "Punto/ línea",
+            "definicion": "Camino o sendero por donde se accede a la playa. Estructura artificial consistente en una rampa que se nivela y se construye sobre una pendiente natural (médanos), utilizada para acceder a la playa. También llamada bajada a playa.",
+            "atributos": [
+              {
+                "codigo": "FNA",
+                "nombre": "Nombre geográfico",
+                "denominacion": "Nombre geográfico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre completo que se utiliza para designar un objeto en un mapa o carta. Está formado por el término genérico y el término específico. Ejemplo: río Mendoza.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "GNA",
+                "nombre": "Término genérico",
+                "denominacion": "Término genérico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte del nombre geográfico que indica el tipo de objeto que identifica. Ejemplo: río, monte, glaciar, establecimiento.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NAM",
+                "nombre": "Término específico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte de un nombre geográfico que acompaña al término genérico y que identifica e individualiza un objeto geográfico determinado. Ejemplo: Paraná en río Paraná; Upsala en glaciar Upsala; Las Marías en establecimiento Las Marías; Esperanza en el caso de bahía Esperanza.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "AGUAS CONTINENTALES",
+        "codigo": 411,
+        "contenido": "Objetos geográficos que se relacionan con el agua que fluye o se almacena sobre la corteza terrestre. Incluye objetos geográficos naturales y obras para su gestión y manejo (IGN, 2015).",
+        "objetos": [
+          {
+            "nombre": "Cuenca hidrográfica",
+            "codigo": 41115,
+            "geometria": "Polígono",
+            "definicion": "Superficie de la tierra firme, delimitada por líneas divisorias de agua, donde queda comprendida una corriente principal, y a partir de su desembocadura se incluyen todos sus afluentes.",
+            "atributos": [
+              {
+                "codigo": "FNA",
+                "nombre": "Nombre geográfico",
+                "denominacion": "Nombre geográfico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre completo que se utiliza para designar un objeto en un mapa o carta. Está formado por el término genérico y el término específico. Ejemplo: río Mendoza.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "GNA",
+                "nombre": "Término genérico",
+                "denominacion": "Término genérico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte del nombre geográfico que indica el tipo de objeto que identifica. Ejemplo: río, monte, glaciar, establecimiento.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NAM",
+                "nombre": "Término específico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte de un nombre geográfico que acompaña al término genérico y que identifica e individualiza un objeto geográfico determinado. Ejemplo: Paraná en río Paraná; Upsala en glaciar Upsala; Las Marías en establecimiento Las Marías; Esperanza en el caso de bahía Esperanza.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "JUR",
+                "nombre": "Condición jurisdiccional",
+                "denominacion": "Condición jurisdiccional",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Determina si la cuenca pertenece a una jurisdicción o a más de una",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "TDC",
+                "nombre": "Tipo de cuenca",
+                "denominacion": "Tipo de cuenca",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Clasificación de la cuenca según el tipo de desagüe.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "ARA",
+                "nombre": "Área",
+                "denominacion": "Área",
+                "tipo": "Numérico",
+                "definicion": "Medida de extensión de una superficie.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Área en metros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en m²"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Área en kilómetros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en km²"
+                  }
+                ]
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Subcuenca hidrográfica",
+            "codigo": 41116,
+            "geometria": "Polígono",
+            "definicion": "Superficie de terreno cuya escorrentía superficial fluye en su totalidad a través de una serie de corrientes, ríos y, eventualmente, lagos, hacia un determinado punto de un curso de agua, generalmente un lago o una confluencia de ríos.",
+            "atributos": [
+              {
+                "codigo": "FNA",
+                "nombre": "Nombre geográfico",
+                "denominacion": "Nombre geográfico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre completo que se utiliza para designar un objeto en un mapa o carta. Está formado por el término genérico y el término específico. Ejemplo: río Mendoza.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "GNA",
+                "nombre": "Término genérico",
+                "denominacion": "Término genérico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte del nombre geográfico que indica el tipo de objeto que identifica. Ejemplo: río, monte, glaciar, establecimiento.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NAM",
+                "nombre": "Término específico",
+                "denominacion": "Término específico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Parte de un nombre geográfico que acompaña al término genérico y que identifica e individualiza un objeto geográfico determinado. Ejemplo: Paraná en río Paraná; Upsala en glaciar Upsala; Las Marías en establecimiento Las Marías; Esperanza en el caso de bahía Esperanza.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "ARA",
+                "nombre": "Área",
+                "denominacion": "Área",
+                "tipo": "Numérico",
+                "definicion": "Medida de extensión de una superficie.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Área en metros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en m²"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Área en kilómetros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en km²"
+                  }
+                ]
+              },
+              {
+                "codigo": "TDC",
+                "nombre": "Tipo de cuenca",
+                "denominacion": "Tipo de cuenca",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Clasificación de la cuenca según el tipo de desagüe.",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "CU1",
+                "nombre": "Cuenca hídrica superficial",
+                "denominacion": "Cuenca hídrica superficial",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Región hídrica superficial, con criterio topográfico.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "JUR",
+                "nombre": "Condición jurisdiccional",
+                "denominacion": "Condición jurisdiccional",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Determina si la cuenca pertenece a una jurisdicción o a más de una",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Estado trófico de aguas continentales",
+            "codigo": 41118,
+            "geometria": "Punto/Polígono",
+            "definicion": "Sistema de clasificación de Carlson (1977) diseñado para valorar los cuerpos de agua continentales en función de su productividad biológica. Depende principalmente de la carga de nutrientes, de su morfometría y del tiempo de permanencia de nutrientes en el agua.",
+            "atributos": [
+              {
+                "codigo": "HYP",
+                "nombre": "Regimen hidrológico",
+                "denominacion": "Régimen hidrológico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Clasificación de acuerdo a la temporalidad de la presencia de agua en la superficie terrestre",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Perenne",
+                    "definicion": "Cuando lleva o contiene agua en forma permanente."
+                  },
+                  {
+                    "codigo": "2",
+                    "etiqueta": "Intermitente",
+                    "definicion": "Cuando lleva o contiene agua temporalmente."
+                  }
+                ]
+              },
+              {
+                "codigo": "SI1",
+                "nombre": "Sistema hídrico",
+                "denominacion": "Sistema hídrico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Agrupamiento de cuencas hídricas superficiales.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "CU1",
+                "nombre": "Cuenca hídrica superficial",
+                "denominacion": "Cuenca hídrica superficial",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Región hídrica superficial, con criterio topográfico.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "TET",
+                "nombre": "Tipo de estado trófico",
+                "denominacion": "Tipo de estado trofico",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Define la categoria del estado trófico",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Escurrimiento superficial",
+            "codigo": 41119,
+            "geometria": "línea",
+            "definicion": "Movimiento del agua en la superficie terrestre, a manera de un manto o lineal, que fluye por gravedad, después de fuertes precipitaciones pluviales o deshielos.",
+            "atributos": [
+              {
+                "codigo": "CU1",
+                "nombre": "Cuenca hídrica superficial",
+                "denominacion": "Cuenca hídrica superficial",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Región hídrica superficial, con criterio topográfico.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "DOF",
+                "nombre": "Direccion del flujo",
+                "denominacion": "Dirección de flujo",
+                "tipo": "Cadena de caracteres",
+                "definicion": "El rumbo del movimiento o la direccion del flujo",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Norte",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido norte"
+                  },
+                  {
+                    "codigo": "2",
+                    "etiqueta": "Noreste",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido noreste"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Este",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido este"
+                  },
+                  {
+                    "codigo": "4",
+                    "etiqueta": "Sureste",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido sureste"
+                  },
+                  {
+                    "codigo": "5",
+                    "etiqueta": "Sur",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido sur"
+                  },
+                  {
+                    "codigo": "6",
+                    "etiqueta": "Suroeste",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido suroeste"
+                  },
+                  {
+                    "codigo": "7",
+                    "etiqueta": "Oeste",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido oeste"
+                  },
+                  {
+                    "codigo": "8",
+                    "etiqueta": "Noroeste",
+                    "definicion": "Cuando la dirección del movimiento del agua es en sentido noroeste"
+                  }
+                ]
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#33CCFF"
+  },
+  {
+    "nombre": "GEOGRAFÍA FÍSICA",
+    "codigo": 5,
+    "contenido": "Comprende los objetos geográficos que se relacionan con las formas del relieve terrestre, los suelos y su cobertura (IDERA, 2015).",
+    "subcategorias": [
+      {
+        "nombre": "EDAFOLOGÍA",
+        "codigo": 504,
+        "contenido": "Objetos geográficos que hacen referencia a diferentes tipos de suelos y sus características (IDERA, 2015).",
+        "objetos": [
+          {
+            "nombre": "Drenaje del suelo",
+            "codigo": 50404,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según la capacidad que tiene el suelo para evacuar el agua por escurrimiento superficial y/o por infiltración.",
+            "atributos": [
+              {
+                "codigo": "DRS",
+                "nombre": "Clasificación del drenaje del suelo",
+                "denominacion": "Claasificación del drenaje del suelo",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Capacidad que tiene el suelo para evacuar el agua por escurrimiento superficial y/o por infiltración",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Muy alta",
+                    "definicion": "Áreas con drenaje imperfecto a pobre"
+                  },
+                  {
+                    "codigo": "2",
+                    "etiqueta": "Alta",
+                    "definicion": "Áreas con drenaje imperfecto y moderado a imperfecto"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Moderada",
+                    "definicion": "Áreas con drenaje moderado"
+                  },
+                  {
+                    "codigo": "4",
+                    "etiqueta": "Baja",
+                    "definicion": "Áreas con drenaje bueno a moderado"
+                  },
+                  {
+                    "codigo": "5",
+                    "etiqueta": "Muy baja",
+                    "definicion": "Áreas con drenaje bueno"
+                  }
+                ]
+              },
+              {
+                "codigo": "ARA",
+                "nombre": "Área",
+                "denominacion": "Área",
+                "tipo": "Numérico",
+                "definicion": "Medida de extensión de una superficie.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Área en metros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en m²"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Área en kilómetros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en km²"
+                  }
+                ]
+              },
+              {
+                "codigo": "SAG",
+                "nombre": "Autoridad de fuente",
+                "denominacion": "Autoridad de fuente",
+                "tipo": "Cadena de caracteres",
+                "definicion": "Nombre de la autoridad responsable de la información utilizada.",
+                "observaciones": "Texto libre",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "COBERTURA DEL SUELO",
+        "codigo": 509,
+        "contenido": "",
+        "objetos": [
+          {
+            "nombre": "Dominios ambientales",
+            "codigo": 50901,
+            "geometria": "Polígono",
+            "definicion": "Porción de la superficie terrestre que se puede delimitar y definir por sus características ambientales (factores bióticos y abióticos).",
+            "atributos": [
+              {
+                "codigo": "ARA",
+                "nombre": "Área",
+                "denominacion": "Área",
+                "tipo": "Numérico",
+                "definicion": "Medida de extensión de una superficie.",
+                "observaciones": "-",
+                "dominio": [
+                  {
+                    "codigo": "-1",
+                    "etiqueta": "Información no disponible",
+                    "definicion": "Cuando no se dispone o no se tiene certeza de los datos."
+                  },
+                  {
+                    "codigo": "1",
+                    "etiqueta": "Área en metros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en m²"
+                  },
+                  {
+                    "codigo": "3",
+                    "etiqueta": "Área en kilómetros cuadrados",
+                    "definicion": "Medida de extensión de una superficie expresada en km²"
+                  }
+                ]
+              },
+              {
+                "codigo": "Tipo del dominio ambiental",
+                "nombre": "Tipo del dominio ambiental",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "Autoridad de fuente",
+                "nombre": "Autoridad de fuente",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Estrés hídrico",
+            "codigo": 50902,
+            "geometria": "Ráster",
+            "definicion": "TDVI (Temperature Dryness Vegetation Index) es un índice de estrés hídrico que combina la temperatura de superficie e índice de vegetación a partir de imágenes satelitáles.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Mecanismos físicos de dispersión en coberturas de suelo.",
+            "codigo": 50903,
+            "geometria": "Ráster",
+            "definicion": "Clasificación no supervisada Wishart H/A/α en imágen RADAR de Apertura Sintética Sentinel 1 de doble polarización. El producto genera 16 clases de las cuales se observan los mecanismos de dispersión en coberturas de suelo como las lagunas, humedales. charcas y uso agrícola ganadero circundante, entre otros.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "DEGRADACIÓN DE TIERRAS Y DESERTIFICACIÓN",
+        "codigo": 512,
+        "contenido": "Objetos geográficos que se refieren a la degradación de las tierras secas, fenómeno originado por las actividades humanas y las variaciones en el clima (CNULD). ",
+        "objetos": [
+          {
+            "nombre": "Área de erosión",
+            "codigo": 51203,
+            "geometria": "Polígono",
+            "definicion": "Zona del terreno donde los procesos de remoción han provocado una degradación areal de las partículas del suelo (por ejemplo: erosión por acción del viento) o a una degradación lineal con erosión profunda de diferentes grados (por ejemplo: erosión por acción de agua en movimiento).",
+            "atributos": []
+          },
+          {
+            "nombre": "Sequía meteorológica",
+            "codigo": 51204,
+            "geometria": "ráster",
+            "definicion": "Área definida según nivel de sequia meteorológica a partir del Índice de sequía de Palmer (PDSI). Este índice se calcula sobre la base del concepto demanda-suministro de agua, teniendo en cuenta el déficit entre la precipitación real y la precipitación necesaria para mantener las condiciones de humedad climática normal, con el fin de estimar las condiciones de la humedad edáfica e identificar situaciones de exceso, normalidad o deficiencia hídrica.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "AMENAZA",
+        "codigo": 514,
+        "contenido": "",
+        "objetos": [
+          {
+            "nombre": "Zona según Peligro ambiental",
+            "codigo": 51401,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos peligrosos. Cuanto mayor sea el número de fuentes de peligro, mayor será la probabilidad de que experimente daños nocivos.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de anegamiento",
+            "codigo": 51402,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de anegamientos. Para ello, la lámina de agua debe permanecer sobre el suelo más de 24 horas.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de sequía",
+            "codigo": 51403,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía. Se da cuando hay un déficit continuo en la escorrentía de superficie, con un nivel inferior a las condiciones normales y se observa una disminución del nivel de las aguas subterráneas, al mismo tiempo que se desarrolla una sequedad excepcional del aire que se refleja en un déficit de vapor de agua.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de erosión costera",
+            "codigo": 51404,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de erosión costera. Podemos hablar de erosión costera, como riesgo o catástrofe, cuando el balance sedimentario muestra una tendencia negativa a largo plazo.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de incendio",
+            "codigo": 51405,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de incendios. Se habla en términos de incendio, cuando el fuego requiere de su extinción.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de anegamiento asociado al drenaje del suelo",
+            "codigo": 51406,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de anegamientos por un mal drenaje del agua por parte del suelo.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de anegamiento asociado a la frecuencia",
+            "codigo": 51407,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de anegamiento en función del tiempo de recurrencia, es decir, con qué frecuencia presenta situaciones de anegamientos.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de anegamiento asociado a la topografía",
+            "codigo": 51408,
+            "geometria": "ráster / Polígono",
+            "definicion": "Área definida según probabilidad de ocurrencia de anegamientos asociado a la topografía, para ello se tiene en cuenta la orientación y la pendiente del terreno.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de sequía asociado al contenido de agua",
+            "codigo": 51409,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía asociados a la disponibilidad de agua en la estructura interna de los tejidos vegetales. El mismo se calcula a partir de la elaboración del índice de agua “Normalized Difference Water Index” (NDWI). El índice responderá con valores altos (próximos a 1) cuanto mayor sea el contenido de agua en la vegetación o en el suelo.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según Peligro de sequía asociado al estrés hídrico",
+            "codigo": 51410,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía asociados al estrés hídrico de la vegetación, el cual se refleja en el contenido de clorofila. El mismo se calcula a partir de la elaboración del índice de vegetación “Normalized Difference Vegetation Index” (NDVI).",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de sequía asociado a la pérdida de lluvias",
+            "codigo": 51411,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía asociados a la pérdida de lluvia. Está integrado por dos indicadores: la textura del suelo y la pendiente. Los sectores que presentan menor capacidad de retención del agua y mayor pendiente, presentarán una mayor peligrosidad de sequía agrícola.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de sequía asociado al Indice de Palmer",
+            "codigo": 51412,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía meteorológica a partir del análisis del Índice de sequía de Palmer (PDSI). El mismo se calcula con datos de precipitación, temperatura y contenido de agua disponible en el suelo.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de incendio asociado a la vegetación",
+            "codigo": 51413,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de incendio asociado a la actividad fotosintética de la vegetación, dado que niveles medios – bajos de NDVI indican bajo contenido de humedad, lo cual facilita su rápida combustión y, por ende, se queman más intensamente. El mismo se calcula a partir de la elaboración del índice de vegetación “Normalized Difference Vegetation Index” (NDVI).",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de incendio asociado a los elementos meteorólogicos",
+            "codigo": 51414,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de incendios asociado a los elementos meteorológicos. Para ello se tiene en cuenta la influencia del viento, las temperaturas altas y los valores de precipitación.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de incendio asociado al factor humano",
+            "codigo": 51415,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de incendio asociado al factor humano. Las mismas están relacionadas con accidentes y negligencias, por lo que se consideró la cercanía a caminos, vías férreas y líneas eléctricas. A menor distancia de los elementos, mayor la peligrosidad.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de erosión costera asociado a la tasa de erosión",
+            "codigo": 51416,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de erosión costera asociado a la tasa de erosión (CVI). Las áreas con una peligrosidad alta y muy alta estarán determinadas por un valor negativo en la tasa, lo cual significa que la costa retrocedió durante el periodo analizado. Aquellas zonas que se mantuvieron estables presentan una peligrosidad moderada y las zonas con valores positivos, es decir, las que se expandieron presentan una peligrosidad baja o muy baja.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de sequía asociado a la textura del suelo",
+            "codigo": 51417,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de sequía asociado a la textura del suelo. La textura del suelo es una propiedad que influye en la velocidad de infiltración del agua dado que, cuanto mayor sea el contenido de arena menor será la capacidad de retener agua en el suelo. Por el contrario, cuanto mayor porcentaje de arcilla contenga mayor será la retención de agua que disponga el suelo.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de anegamientos asociado a la cobertura del suelo",
+            "codigo": 51418,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de anegamientos asociado a la cobertura del suelo. La peligrosidad va a estar definida por el tipo de vegetación presente en el área, cuanto más densa sea ésta menor será la peligrosidad, dado que ello favorece la infiltración. El mismo se calcula a partir de la elaboración del índice de vegetación “Normalized Difference Vegetation Index” (NDVI).",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zona según peligro de anegamiento asociado a los elementos meteorológicos",
+            "codigo": 51419,
+            "geometria": "Ráster",
+            "definicion": "Área definida según probabilidad de ocurrencia de eventos de anegamientos asociado a los elementos meteorológicos. Las áreas con peligro de anegamiento alto son aquellas que presentan valores altos de precipitación y bajas temperaturas, mientras que las de menor peligrosidad registran valores altos de temperatura y bajos de precipitación.",
+            "atributos": [
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#996600"
+  },
+  {
+    "nombre": "BIOTA",
+    "codigo": 6,
+    "contenido": "Comprende los objetos geográficos asociados a la distribución de los seres vivos (IGN, 2015). ",
+    "subcategorias": [
+      {
+        "nombre": "FLORA",
+        "codigo": 608,
+        "contenido": "",
+        "objetos": [
+          {
+            "nombre": "Carbono por hectárea",
+            "codigo": 60801,
+            "geometria": "Polígono",
+            "definicion": "Valor estimado de carbono almacenado, por hectárea, el cual se compone por las reservas de carbono en la biomasa aérea, en la biomasa subterránea, en la madera muerta y hojarasca y en el suelo.",
+            "atributos": []
+          }
+        ]
+      }
+    ],
+    "color": "#99FF99"
+  },
+  {
+    "nombre": "DEMARCACIÓN",
+    "codigo": 7,
+    "contenido": "Comprende los objetos territoriales legales que se relacionan con las fronteras y los límites políticos, administrativos y de hecho (IDERA, 2015). ",
+    "subcategorias": [
+      {
+        "nombre": "PLANEAMIENTO URBANO",
+        "codigo": 707,
+        "contenido": "",
+        "objetos": [
+          {
+            "nombre": "Usos del suelo",
+            "codigo": 70703,
+            "geometria": "Polígono",
+            "definicion": "Actividad que se desarrolla en un determinado espacio geográfico en el momento de la elaboración del estudio de zonas homogéneas y corresponde a la utilización que se le da al suelo y se observa en el momento del estudio.",
+            "atributos": []
+          }
+        ]
+      }
+    ],
+    "color": "#B2B2B2"
+  },
+  {
+    "nombre": "DEFENSA Y SEGURIDAD",
+    "codigo": 9,
+    "contenido": "Comprende los objetos geográficos inherentes a las instalaciones militares o a las estructuras de las operaciones militares (IDERA, 2015).",
+    "subcategorias": [],
+    "color": "#FF0000",
+    "icon": "Shield"
+  },
+  {
+    "nombre": "CLIMA Y METEOROLOGÍA",
+    "codigo": 10,
+    "contenido": "Clasifica subcategorías que reúnen información climática y meteorológica (adaptación DFDD).",
+    "subcategorias": [
+      {
+        "nombre": "ZONAS Y REGIONES CLIMÁTICAS",
+        "codigo": 1003,
+        "contenido": "Objetos geográficos que describen zonas y / o regiones de clima con las condiciones climáticas especiales (adaptación DFDD).",
+        "objetos": [
+          {
+            "nombre": "Zonas según precipitación promedio",
+            "codigo": 100308,
+            "geometria": "Ráster",
+            "definicion": "Área definida en función de las precipitaciones promedio",
+            "atributos": [
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zonas según temperaturas máximas promedio",
+            "codigo": 100308,
+            "geometria": "Ráster",
+            "definicion": "Área definida en función de las temperaturas máximas promedio",
+            "atributos": [
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          },
+          {
+            "nombre": "Zonas según temperaturas mínimas promedio",
+            "codigo": 100309,
+            "geometria": "Ráster",
+            "definicion": "Área definida en función de las temperaturas mínimas promedio",
+            "atributos": [
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "COMPONENTES ATMOSFERICOS",
+        "codigo": 1004,
+        "contenido": "",
+        "objetos": [
+          {
+            "nombre": "Nivel de dióxido de nitrógeno",
+            "codigo": 100401,
+            "geometria": "Ráster",
+            "definicion": "Localización de niveles semanales de emanaciones de NO₂.",
+            "atributos": [
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "denominacion": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "denominacion": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "denominacion": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#9CC2E5"
+  },
+  {
+    "nombre": "CATASTRO",
+    "codigo": 11,
+    "contenido": "Comprende los objetos  territoriales legales que pertenecen a un determinado país o distrito, correspondientes a un inventario público, metódicamente ordenado, que contiene datos concernientes a los mismos y que se determinan a partir de actos de levantamientos territoriales. La unidad de registración del catastro es la parcela (IDERA, 2015).",
+    "subcategorias": [],
+    "color": "#CCA800",
+    "icon": "MapIcon"
+  },
+  {
+    "nombre": "UNIDADES GEOESTADÍSTICAS",
+    "codigo": 12,
+    "contenido": "Comprende los objetos geográficos que definen áreas estadísticas de desagregación del territotio nacional, provincial y de áreas de gobierno local. Se utilizan tanto para el relevamiento como para la publicación de resultados, y son comparables intercensalmente a pesar de la dinámica de distribución de la población (INDEC, 2018). ",
+    "subcategorias": [],
+    "color": "#9B5EA2",
+    "icon": "BarChart3"
+  },
+  {
+    "nombre": "ABSTRACTO",
+    "codigo": 23,
+    "contenido": "Este subgrupo consta de conceptos que se utilizan para modelar información sobre tipos de fenómenos, pero que en sí mismos no representan fenómenos. (Adaptación del DFDD) - IDESoB 2024",
+    "subcategorias": [
+      {
+        "nombre": "ENTIDAD DE INFORMACIÓN",
+        "codigo": 2301,
+        "contenido": "Entidades que se utilizan para modelar la información relativa a los tipos de fenómenos, pero que no representan fenómenos en sí mismos. Por ejemplo, las características del pavimento compartidas por muchos tipos de rutas de transporte terrestre, o las características de calidad de los datos compartidas por todas las masas de agua continentales. (Adaptación del DFDD) - IDESoB 2024",
+        "objetos": [
+          {
+            "nombre": "Información sobre recursos hídricos",
+            "codigo": 230101,
+            "geometria": "Ráster",
+            "definicion": "Localización de áreas con agua que habitualmente presentan variabilidad superficial dado a procesos de inundaciones o desecación.",
+            "atributos": [
+              {
+                "codigo": "RÁSTER",
+                "nombre": "RÁSTER",
+                "tipo": "CharacterString",
+                "definicion": "",
+                "observaciones": "-",
+                "dominio": null
+              },
+              {
+                "codigo": "NOTA",
+                "denominacion": "Nota importante",
+                "tipo": "PERFIL DE OG",
+                "definicion": "Para interpretar los valores correctamente, es necesario verificar primero los metadatos y el perfil OG",
+                "observaciones": "-",
+                "dominio": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "color": "#8E3999"
+  }
+]

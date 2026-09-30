@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gfc:FC_FeatureCatalogue xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gfc="http://www.isotc211.org/2005/gfc">
+  <gfc:name>
+    <gco:CharacterString>Catálogo de Objetos Geográficos de la Infraestructura de Datos Espaciales del Sudoeste Bonaerense (IDESoB)</gco:CharacterString>
+  </gfc:name>
+  <gfc:scope>
+    <gco:CharacterString>Facilitar el manejo de la información geográfica de forma homologada y descentralizada</gco:CharacterString>
+  </gfc:scope>
+  <gfc:versionNumber>
+    <gco:CharacterString>2.0</gco:CharacterString>
+  </gfc:versionNumber>
+  <gfc:versionDate>
+    <gco:Date>2023-06-01</gco:Date>
+  </gfc:versionDate>
+  <gfc:featureType>
+    <gfc:FC_FeatureType>
+      <gfc:typeName>
+        <gco:LocalName>Zona según peligro de erosión costera asociado a la tasa de erosión</gco:LocalName>
+      </gfc:typeName>
+      <gfc:definition>
+        <gco:CharacterString>Área definida según probabilidad de ocurrencia de eventos de erosión costera asociado a la tasa de erosión (CVI). Las áreas con una peligrosidad alta y muy alta estarán determinadas por un valor negativo en la tasa, lo cual significa que la costa retrocedió durante el periodo analizado. Aquellas zonas que se mantuvieron estables presentan una peligrosidad moderada y las zonas con valores positivos, es decir, las que se expandieron presentan una peligrosidad baja o muy baja.</gco:CharacterString>
+      </gfc:definition>
+      <gfc:code>
+        <gco:CharacterString>051416</gco:CharacterString>
+      </gfc:code>
+      <gfc:isAbstract>
+        <gco:Boolean>false</gco:Boolean>
+      </gfc:isAbstract>
+      <gfc:carrierOfCharacteristics>
+        <gfc:FC_FeatureAttribute>
+          <gfc:memberName>
+            <gco:LocalName>RÁSTER</gco:LocalName>
+          </gfc:memberName>
+          <gfc:definition>
+            <gco:CharacterString>RÁSTER</gco:CharacterString>
+          </gfc:definition>
+          <gfc:valueType>
+            <gco:TypeName>
+              <gco:aName>
+                <gco:CharacterString>CharacterString</gco:CharacterString>
+              </gco:aName>
+            </gco:TypeName>
+          </gfc:valueType>
+        </gfc:FC_FeatureAttribute>
+      </gfc:carrierOfCharacteristics>
+    </gfc:FC_FeatureType>
+  </gfc:featureType>
+</gfc:FC_FeatureCatalogue>
