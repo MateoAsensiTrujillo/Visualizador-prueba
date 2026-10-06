@@ -41,56 +41,10 @@ import {
 
 import catalogData from "@/data/catalogo-idesob.json"
 import dbyFData from "../data/DByF_V2.0_IDERA_2022.json"
-
-interface DominioValor {
-  codigo: string
-  etiqueta: string
-  definicion: string
-  observaciones: string
-}
-
-interface Atributo {
-  codigo: string
-  denominacion: string
-  tipo: string
-  definicion: string
-  observaciones: string
-  dominio: DominioValor[]
-}
-
-interface Objeto {
-  nombre: string
-  codigo: string
-  geometria: string
-  definicion: string
-  atributos: Atributo[]
-  archivo_xml?: string
-  archivo_docx?: string
-}
-
-interface Subcategoria {
-  nombre: string
-  codigo: string
-  contenido: string
-  objetos: Objeto[]
-}
-
-interface Categoria {
-  nombre: string
-  codigo: string
-  contenido: string
-  color: string
-  subcategorias: Subcategoria[]
-}
-
-interface AtributoDetalle {
-  codigo: string
-  nombre: string
-  definicion: string
-  dominio: DominioValor[] | null
-  tipo: string
-  observaciones: string
-}
+import { SearchResults } from "./search-results"
+import { normalize } from "@/lib/search-utils"
+import { useDebounce } from "@/hooks/use-debounce"
+import { Categoria, Subcategoria, Objeto, Atributo, SearchResult, NavigationLevel } from "@/lib/types"
 
 const categoryColors: Record<string, {
   color: string; circleColor: string; lightColor: string; hoverColor: string;
@@ -260,34 +214,81 @@ const getGeometryTypes = (geometria: string): string[] => {
   return types
 }
 
-type NavigationLevel = "categories" | "subcategories" | "objects"
-
 export function GeographicDataDashboard() {
   const [searchTerm, setSearchTerm] = useState("")
   const [currentLevel, setCurrentLevel] = useState<NavigationLevel>("categories")
   const [selectedCategory, setSelectedCategory] = useState<Categoria | null>(null)
   const [selectedSubcategory, setSelectedSubcategory] = useState<Subcategoria | null>(null)
-  const [expandedDefinitions, setExpandedDefinitions] = useState<Set<string>>(new Set())
+  const [expandedDefinitions, setExpandedDefinitions] = useState<Set<string | number>>(new Set())
+  const [openDialogObjectId, setOpenDialogObjectId] = useState<string | number | null>(null)
 
   const data = catalogData as Categoria[]
+  
+  const debouncedSearchTerm = useDebounce(searchTerm, 300)
+  const isGlobalSearch = debouncedSearchTerm.trim().length >= 2
 
-  const isGlobalSearch = searchTerm.trim().length > 0
-  const searchLower = searchTerm.toLowerCase()
+  const searchIndex = useMemo(() => {
+    const idx: SearchResult = {
+      categorias: [],
+      subcategorias: [],
+      objetos: [],
+      atributos: []
+    }
+    const atributosMap = new Map<string, typeof idx.atributos[0]>()
 
-  const searchResults = useMemo(() => {
-    if (!isGlobalSearch) return { categories: [], subcategories: [] }
-    const matchedCategories = data.filter((c) => c.nombre.toLowerCase().includes(searchLower) || c.codigo.toString().includes(searchLower))
-    const matchedSubcategories: (Subcategoria & { parentCat: Categoria })[] = []
+    data.forEach(cat => {
+      idx.categorias.push({
+        ...cat,
+        textoBusqueda: normalize(`${cat.nombre} ${cat.codigo}`)
+      })
 
-    data.forEach((c) => {
-      c.subcategorias.forEach((s) => {
-        if (s.nombre.toLowerCase().includes(searchLower) || s.codigo.toString().includes(searchLower)) {
-          matchedSubcategories.push({ ...s, parentCat: c })
-        }
+      cat.subcategorias.forEach(sub => {
+        idx.subcategorias.push({
+          ...sub,
+          parentCat: cat,
+          textoBusqueda: normalize(`${sub.nombre} ${sub.codigo}`)
+        })
+
+        sub.objetos.forEach(obj => {
+          idx.objetos.push({
+            ...obj,
+            parentCat: cat,
+            parentSub: sub,
+            textoBusqueda: normalize(`${obj.nombre} ${obj.codigo} ${obj.definicion}`)
+          })
+
+          obj.atributos.forEach(attr => {
+            if (!atributosMap.has(attr.codigo)) {
+              atributosMap.set(attr.codigo, {
+                ...attr,
+                textoBusqueda: normalize(`${attr.denominacion || attr.nombre || ""} ${attr.codigo}`),
+                objetos: []
+              })
+            }
+            atributosMap.get(attr.codigo)!.objetos.push({
+              categoria: cat,
+              subcategoria: sub,
+              objeto: obj
+            })
+          })
+        })
       })
     })
-    return { categories: matchedCategories, subcategories: matchedSubcategories }
-  }, [data, searchLower, isGlobalSearch])
+    
+    idx.atributos = Array.from(atributosMap.values())
+    return idx
+  }, [data])
+
+  const searchResults = useMemo(() => {
+    if (!isGlobalSearch) return null
+    const q = normalize(debouncedSearchTerm)
+    return {
+      categorias: searchIndex.categorias.filter(c => c.textoBusqueda.includes(q)),
+      subcategorias: searchIndex.subcategorias.filter(s => s.textoBusqueda.includes(q)),
+      objetos: searchIndex.objetos.filter(o => o.textoBusqueda.includes(q)),
+      atributos: searchIndex.atributos.filter(a => a.textoBusqueda.includes(q))
+    }
+  }, [debouncedSearchTerm, searchIndex, isGlobalSearch])
 
   const getFilteredData = () => {
     if (currentLevel === "categories") {
@@ -304,7 +305,7 @@ export function GeographicDataDashboard() {
     return []
   }
 
-  const getCategoryConfig = (codigo: string) => {
+  const getCategoryConfig = (codigo: string | number) => {
     return (
       categoryColors[codigo] || {
         color: "bg-gray-100 text-gray-900 border-gray-300",
@@ -337,6 +338,25 @@ export function GeographicDataDashboard() {
     setSearchTerm("")
   }
 
+  const handleNavigateToObject = (objeto: Objeto, subcategoria: Subcategoria, categoria: Categoria) => {
+    setSelectedCategory(categoria)
+    setSelectedSubcategory(subcategoria)
+    setCurrentLevel("objects")
+    setSearchTerm("")
+    setOpenDialogObjectId(objeto.codigo)
+    
+    setTimeout(() => {
+      const el = document.getElementById(`objeto-${objeto.codigo}`)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        el.classList.add('ring-4', 'ring-blue-400', 'ring-offset-2', 'transition-all', 'duration-500')
+        setTimeout(() => {
+          el.classList.remove('ring-4', 'ring-blue-400', 'ring-offset-2')
+        }, 2000)
+      }
+    }, 100)
+  }
+
   const handleBackNavigation = () => {
     if (currentLevel === "objects") {
       setCurrentLevel("subcategories")
@@ -361,7 +381,7 @@ export function GeographicDataDashboard() {
     }
   }
 
-  const toggleDefinition = (codigo: string) => {
+  const toggleDefinition = (codigo: string | number) => {
     setExpandedDefinitions((prev) => {
       const newSet = new Set(prev)
       if (newSet.has(codigo)) {
@@ -559,83 +579,37 @@ export function GeographicDataDashboard() {
             <div className="relative flex-1 max-w-md">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
-                placeholder="Buscar en el catálogo (clases y subclases)..."
+                placeholder="Buscar categorías, subcategorías, objetos o atributos..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 border-gray-300"
+                className="pl-10 pr-10 border-gray-300"
               />
+              {searchTerm && (
+                <button
+                  onClick={() => setSearchTerm("")}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 font-bold"
+                >
+                  ✕
+                </button>
+              )}
             </div>
           </div>
 
-          {isGlobalSearch ? (
-            <div className="space-y-8">
-              <h2 className="text-2xl font-bold text-gray-800 border-b pb-2">Resultados de búsqueda</h2>
-              
-              {searchResults.categories.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-700">Clases ({searchResults.categories.length})</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                    {searchResults.categories.map((categoria: Categoria) => {
-                      const config = getCategoryConfig(categoria.codigo)
-                      const IconComponent = config.icon
-                      return (
-                        <div
-                          key={categoria.codigo}
-                          className={`cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[130px] flex flex-col justify-center items-center text-center shadow-sm bg-white ${config.borderColor}`}
-                          onClick={() => {
-                            handleCategorySelect(categoria)
-                          }}
-                        >
-                          <div className={`rounded-full p-3 mb-2 shadow-md ${config.circleColor}`}>
-                            <IconComponent className="h-8 w-8 text-white" />
-                          </div>
-                          <div className="font-bold text-sm leading-tight mb-2 text-gray-800">{categoria.nombre}</div>
-                          <Badge variant="outline" className="mb-1 text-xs bg-white border-gray-300">
-                            Código: {categoria.codigo.toString().padStart(2, "0")}
-                          </Badge>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {searchResults.subcategories.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-700">Subclases ({searchResults.subcategories.length})</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                    {searchResults.subcategories.map((subcategoria) => {
-                      const config = getCategoryConfig(subcategoria.parentCat.codigo)
-                      return (
-                        <div
-                          key={subcategoria.codigo}
-                          className={`${config.color} ${config.hoverColor} cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[100px] flex flex-col justify-center items-center text-center shadow-sm`}
-                          onClick={() => {
-                            setSelectedCategory(subcategoria.parentCat)
-                            handleSubcategorySelect(subcategoria)
-                          }}
-                        >
-                          <div className={`${config.circleColor} rounded-full p-2 mb-2`}>
-                            <Layers className="h-6 w-6 text-white" />
-                          </div>
-                          <div className="font-bold text-sm leading-tight mb-2">{subcategoria.nombre}</div>
-                          <Badge variant="outline" className="mb-1 text-xs bg-white/50 border-gray-400">
-                            Código: {subcategoria.codigo.toString().padStart(4, "0")}
-                          </Badge>
-                          <div className="text-xs font-semibold text-gray-700 mt-2 border-t pt-1 w-full">{subcategoria.parentCat.nombre}</div>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {searchResults.categories.length === 0 && searchResults.subcategories.length === 0 && (
-                <div className="text-center py-10 text-gray-500">
-                  No se encontraron resultados para "{searchTerm}"
-                </div>
-              )}
-            </div>
+          {isGlobalSearch && searchResults ? (
+            <SearchResults
+              results={searchResults}
+              searchTerm={debouncedSearchTerm}
+              onNavigateToCategory={handleCategorySelect}
+              onNavigateToSubcategory={(sub, cat) => {
+                setSelectedCategory(cat)
+                handleSubcategorySelect(sub)
+              }}
+              onNavigateToObject={handleNavigateToObject}
+              getCategoryConfig={getCategoryConfig}
+              getGeometryTypes={getGeometryTypes}
+              getGeometryColor={getGeometryColor}
+              isDByF={isDByF}
+            />
           ) : (
             <>
 
@@ -749,8 +723,9 @@ export function GeographicDataDashboard() {
 
                   return (
                     <Card
+                      id={`objeto-${objeto.codigo}`}
                       key={objeto.codigo}
-                      className="transition-all duration-200 hover:shadow-xl border-0 shadow-md overflow-hidden"
+                      className="transition-all duration-200 hover:shadow-xl border-0 shadow-md overflow-hidden scroll-mt-24"
                     >
                       {/* Colored top accent bar using exact Excel HEX color */}
                       <div
@@ -796,7 +771,10 @@ export function GeographicDataDashboard() {
                           )}
                         </div>
                         <div className="flex items-center justify-end mb-4">
-                          <Dialog>
+                          <Dialog 
+                            open={openDialogObjectId === objeto.codigo} 
+                            onOpenChange={(open) => setOpenDialogObjectId(open ? objeto.codigo : null)}
+                          >
                             <DialogTrigger asChild>
                               <Button
                                 variant="default"
