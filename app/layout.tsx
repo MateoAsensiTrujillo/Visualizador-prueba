@@ -5,8 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Catálogo de Objetos Geográficos IDESoB",
-  description: "Dashboard interactivo para el catálogo de objetos geográficos de IDESoB",
+  title: "Catálogo de Objetos Geográficos IDERA",
+  description: "Dashboard interactivo para el catálogo de objetos geográficos de IDERA - Compatible con React 19.1.1",
   generator: "Next.js + React 19",
 }
 
