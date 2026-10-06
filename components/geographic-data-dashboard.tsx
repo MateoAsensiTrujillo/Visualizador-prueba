@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useMemo, useDeferredValue } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -28,6 +28,7 @@ import {
   Shield,
   Building,
   ArrowLeft,
+  Home,
   Cloud,
   MapIcon,
   BarChart3,
@@ -36,126 +37,188 @@ import {
   Download,
   ExternalLink,
   ChevronDown,
-  X,
 } from "lucide-react"
-import { SearchResults } from "@/components/search-results"
-import { buildSearchIndex, searchIndex, type ObjetoRef } from "@/lib/search-utils"
-import type { AtributoDetalle, Categoria, Objeto, Subcategoria } from "@/lib/catalog-types"
 
-// Import the JSON data
-import catalogData from "@/data/catalogo-objetos-2025.json"
+import catalogData from "@/data/catalogo-idesob.json"
 import dbyFData from "../data/DByF_V2.0_IDERA_2022.json"
 
-const categoryColors = {
-  1: {
-    // INDUSTRIA Y SERVICIOS - Yellow
+interface DominioValor {
+  codigo: string
+  etiqueta: string
+  definicion: string
+  observaciones: string
+}
+
+interface Atributo {
+  codigo: string
+  denominacion: string
+  tipo: string
+  definicion: string
+  observaciones: string
+  dominio: DominioValor[]
+}
+
+interface Objeto {
+  nombre: string
+  codigo: string
+  geometria: string
+  definicion: string
+  atributos: Atributo[]
+  archivo_xml?: string
+  archivo_docx?: string
+}
+
+interface Subcategoria {
+  nombre: string
+  codigo: string
+  contenido: string
+  objetos: Objeto[]
+}
+
+interface Categoria {
+  nombre: string
+  codigo: string
+  contenido: string
+  color: string
+  subcategorias: Subcategoria[]
+}
+
+interface AtributoDetalle {
+  codigo: string
+  nombre: string
+  definicion: string
+  dominio: DominioValor[] | null
+  tipo: string
+  observaciones: string
+}
+
+const categoryColors: Record<string, {
+  color: string; circleColor: string; lightColor: string; hoverColor: string;
+  borderColor: string; textColor: string;
+  icon: React.ComponentType<{ className?: string }>; name: string
+}> = {
+  "1": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-yellow-400",
-    lightColor: "bg-yellow-50 border-yellow-200 text-yellow-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#FFFF99]",
+    lightColor: "bg-[#FFFF99]/40 border-[#FFFF99]/80 text-[#7A5000]",
+    hoverColor: "hover:bg-[#FFFF99]/60",
+    borderColor: "border-[#FFFF99]",
+    textColor: "text-[#7A5000]",
     icon: Factory,
     name: "INDUSTRIA Y SERVICIOS",
   },
-  2: {
-    // INFRAESTRUCTURA SOCIAL - Red
+  "2": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-red-400",
-    lightColor: "bg-red-50 border-red-200 text-red-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#FF0000]",
+    lightColor: "bg-[#FF0000]/10 border-[#FF0000]/30 text-[#CC0000]",
+    hoverColor: "hover:bg-[#FF0000]/10",
+    borderColor: "border-[#FF0000]",
+    textColor: "text-[#CC0000]",
     icon: Users,
-    name: "INFRAESTRUCTURA SOCIAL",
+    name: "GEOGRAFÍA SOCIAL",
   },
-  3: {
-    // TRANSPORTE - Orange
+  "3": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-orange-400",
-    lightColor: "bg-orange-50 border-orange-200 text-orange-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#FF8000]",
+    lightColor: "bg-[#FF8000]/10 border-[#FF8000]/40 text-[#CC6600]",
+    hoverColor: "hover:bg-[#FF8000]/10",
+    borderColor: "border-[#FF8000]",
+    textColor: "text-[#CC6600]",
     icon: Truck,
     name: "TRANSPORTE",
   },
-  4: {
-    // HIDROGRAFÍA Y OCEANOGRAFÍA - Light Blue
+  "4": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-cyan-400",
-    lightColor: "bg-cyan-50 border-cyan-200 text-cyan-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#33CCFF]",
+    lightColor: "bg-[#33CCFF]/10 border-[#33CCFF]/40 text-[#007EA8]",
+    hoverColor: "hover:bg-[#33CCFF]/10",
+    borderColor: "border-[#33CCFF]",
+    textColor: "text-[#007EA8]",
     icon: Waves,
     name: "HIDROGRAFÍA Y OCEANOGRAFÍA",
   },
-  5: {
-    // GEOGRAFÍA FÍSICA - Brown
+  "5": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-amber-400",
-    lightColor: "bg-amber-50 border-amber-200 text-amber-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#996633]",
+    lightColor: "bg-[#996633]/10 border-[#996633]/40 text-[#664422]",
+    hoverColor: "hover:bg-[#996633]/10",
+    borderColor: "border-[#996633]",
+    textColor: "text-[#664422]",
     icon: Mountain,
     name: "GEOGRAFÍA FÍSICA",
   },
-  6: {
-    // BIOTA - Green
+  "6": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-green-400",
-    lightColor: "bg-green-50 border-green-200 text-green-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#00FF00]",
+    lightColor: "bg-[#00FF00]/20 border-[#00FF00]/40 text-[#008000]",
+    hoverColor: "hover:bg-[#00FF00]/20",
+    borderColor: "border-[#00FF00]",
+    textColor: "text-[#008000]",
     icon: Leaf,
     name: "BIOTA",
   },
-  7: {
-    // DEMARCACIÓN - Gray
+  "7": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-gray-400",
-    lightColor: "bg-gray-50 border-gray-200 text-gray-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#808080]",
+    lightColor: "bg-[#808080]/20 border-[#808080]/40 text-[#555555]",
+    hoverColor: "hover:bg-[#808080]/20",
+    borderColor: "border-[#808080]",
+    textColor: "text-[#555555]",
     icon: Building,
     name: "DEMARCACIÓN",
   },
-  8: {
-    // CLIMA Y METEOROLOGÍA - Dark Blue
+  "9": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-blue-400",
-    lightColor: "bg-blue-50 border-blue-200 text-blue-800",
-    hoverColor: "hover:bg-gray-200",
-    icon: Cloud,
-    name: "CLIMA Y METEOROLOGÍA",
-  },
-  9: {
-    // DEFENSA Y SEGURIDAD - Purple
-    color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-purple-400",
-    lightColor: "bg-purple-50 border-purple-200 text-purple-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#9966FF]",
+    lightColor: "bg-[#9966FF]/10 border-[#9966FF]/40 text-[#6633CC]",
+    hoverColor: "hover:bg-[#9966FF]/10",
+    borderColor: "border-[#9966FF]",
+    textColor: "text-[#6633CC]",
     icon: Shield,
     name: "DEFENSA Y SEGURIDAD",
   },
-  10: {
-    // CATASTRO - Beige/Orange
+  "10": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-orange-400",
-    lightColor: "bg-orange-50 border-orange-200 text-orange-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#0080C0]",
+    lightColor: "bg-[#0080C0]/20 border-[#0080C0]/40 text-[#005580]",
+    hoverColor: "hover:bg-[#0080C0]/20",
+    borderColor: "border-[#0080C0]",
+    textColor: "text-[#005580]",
+    icon: Cloud,
+    name: "CLIMA Y METEOROLOGÍA",
+  },
+  "11": {
+    color: "bg-gray-100 text-gray-900 border-gray-300",
+    circleColor: "bg-[#FF9966]",
+    lightColor: "bg-[#FF9966]/20 border-[#FF9966]/40 text-[#CC5522]",
+    hoverColor: "hover:bg-[#FF9966]/20",
+    borderColor: "border-[#FF9966]",
+    textColor: "text-[#CC5522]",
     icon: MapIcon,
     name: "CATASTRO",
   },
-  11: {
-    // UNIDADES GEOESTADÍSTICAS - Light Green
+  "12": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-emerald-400",
-    lightColor: "bg-emerald-50 border-emerald-200 text-emerald-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#00CC99]",
+    lightColor: "bg-[#00CC99]/20 border-[#00CC99]/40 text-[#008866]",
+    hoverColor: "hover:bg-[#00CC99]/20",
+    borderColor: "border-[#00CC99]",
+    textColor: "text-[#008866]",
     icon: BarChart3,
     name: "UNIDADES GEOESTADÍSTICAS",
   },
-  12: {
-    // ABSTRACTO - Dark Purple
+  "23": {
     color: "bg-gray-100 text-gray-900 border-gray-300",
-    circleColor: "bg-violet-400",
-    lightColor: "bg-violet-50 border-violet-200 text-violet-800",
-    hoverColor: "hover:bg-gray-200",
+    circleColor: "bg-[#800080]",
+    lightColor: "bg-[#800080]/10 border-[#800080]/40 text-[#4D004D]",
+    hoverColor: "hover:bg-[#800080]/10",
+    borderColor: "border-[#800080]",
+    textColor: "text-[#4D004D]",
     icon: Archive,
     name: "ABSTRACTO",
   },
 }
+
 
 const geometryColors = {
   Polígono: "bg-emerald-500 text-white",
@@ -185,6 +248,18 @@ const getGeometryType = (geometria: string): string => {
   return geometria
 }
 
+/** Devuelve un array con los tipos de geometría detectados en el string */
+const getGeometryTypes = (geometria: string): string[] => {
+  const raw = geometria.toLowerCase()
+  const types: string[] = []
+  if (raw.includes("punto") || raw.includes("point")) types.push("Punto")
+  if (raw.includes("línea") || raw.includes("linea") || raw.includes("line")) types.push("Línea")
+  if (raw.includes("polígono") || raw.includes("poligono") || raw.includes("polygon")) types.push("Polígono")
+  if (raw.includes("ráster") || raw.includes("raster")) types.push("Ráster")
+  if (types.length === 0 && geometria.trim()) types.push(geometria.trim())
+  return types
+}
+
 type NavigationLevel = "categories" | "subcategories" | "objects"
 
 export function GeographicDataDashboard() {
@@ -192,45 +267,46 @@ export function GeographicDataDashboard() {
   const [currentLevel, setCurrentLevel] = useState<NavigationLevel>("categories")
   const [selectedCategory, setSelectedCategory] = useState<Categoria | null>(null)
   const [selectedSubcategory, setSelectedSubcategory] = useState<Subcategoria | null>(null)
-  const [expandedDefinitions, setExpandedDefinitions] = useState<Set<number>>(new Set())
-  const [atributos, setAtributos] = useState<AtributoDetalle[]>([])
-  // Objeto cuyo diálogo de atributos está abierto y atributo a resaltar dentro de él
-  const [openObjetoCodigo, setOpenObjetoCodigo] = useState<number | null>(null)
-  const [highlightAtributo, setHighlightAtributo] = useState<string | null>(null)
+  const [expandedDefinitions, setExpandedDefinitions] = useState<Set<string>>(new Set())
 
   const data = catalogData as Categoria[]
 
-  useEffect(() => {
-    fetch("/atributos-2025.json")
-      .then((res) => res.json())
-      .then((data) => setAtributos(data))
-      .catch((error) => console.error("Error loading atributos:", error))
-  }, [])
+  const isGlobalSearch = searchTerm.trim().length > 0
+  const searchLower = searchTerm.toLowerCase()
 
-  // Índice de búsqueda global (se recalcula cuando llegan los detalles de atributos)
-  const searchIdx = useMemo(() => buildSearchIndex(data, atributos), [data, atributos])
-  const deferredSearchTerm = useDeferredValue(searchTerm)
-  const searchResults = useMemo(() => searchIndex(searchIdx, deferredSearchTerm), [searchIdx, deferredSearchTerm])
+  const searchResults = useMemo(() => {
+    if (!isGlobalSearch) return { categories: [], subcategories: [] }
+    const matchedCategories = data.filter((c) => c.nombre.toLowerCase().includes(searchLower) || c.codigo.toString().includes(searchLower))
+    const matchedSubcategories: (Subcategoria & { parentCat: Categoria })[] = []
 
-  // Desplazar al atributo resaltado al abrir el diálogo
-  useEffect(() => {
-    if (openObjetoCodigo === null || !highlightAtributo) return
-    const t = setTimeout(() => {
-      document
-        .getElementById(`attr-${openObjetoCodigo}-${highlightAtributo}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "center" })
-    }, 150)
-    return () => clearTimeout(t)
-  }, [openObjetoCodigo, highlightAtributo, atributos])
+    data.forEach((c) => {
+      c.subcategorias.forEach((s) => {
+        if (s.nombre.toLowerCase().includes(searchLower) || s.codigo.toString().includes(searchLower)) {
+          matchedSubcategories.push({ ...s, parentCat: c })
+        }
+      })
+    })
+    return { categories: matchedCategories, subcategories: matchedSubcategories }
+  }, [data, searchLower, isGlobalSearch])
 
-  const getAtributoDetalle = (codigo: string): AtributoDetalle | null => {
-    return atributos.find((attr) => attr.codigo === codigo) || null
+  const getFilteredData = () => {
+    if (currentLevel === "categories") {
+      return data.filter((categoria) => categoria.nombre.toLowerCase().includes(searchTerm.toLowerCase()))
+    } else if (currentLevel === "subcategories" && selectedCategory) {
+      return selectedCategory.subcategorias.filter((subcategoria) =>
+        subcategoria.nombre.toLowerCase().includes(searchTerm.toLowerCase()),
+      )
+    } else if (currentLevel === "objects" && selectedSubcategory) {
+      return selectedSubcategory.objetos.filter((objeto) =>
+        objeto.nombre.toLowerCase().includes(searchTerm.toLowerCase()),
+      )
+    }
+    return []
   }
 
-
-  const getCategoryConfig = (codigo: number) => {
+  const getCategoryConfig = (codigo: string) => {
     return (
-      categoryColors[codigo as keyof typeof categoryColors] || {
+      categoryColors[codigo] || {
         color: "bg-gray-100 text-gray-900 border-gray-300",
         circleColor: "bg-gray-700",
         lightColor: "bg-gray-50 border-gray-200 text-gray-800",
@@ -239,6 +315,10 @@ export function GeographicDataDashboard() {
         name: "CATEGORÍA",
       }
     )
+  }
+
+  const getAtributoDetalle = (codigo: string, atributosLista: Atributo[]): Atributo | null => {
+    return atributosLista.find((a) => a.codigo === codigo) || null
   }
 
   const getGeometryColor = (geometria: string) => {
@@ -269,59 +349,19 @@ export function GeographicDataDashboard() {
     setSearchTerm("")
   }
 
-  /* ----------------------- Navegación desde la búsqueda ---------------------- */
-
-  const scrollToContent = () => {
-    document.getElementById("main-content")?.scrollIntoView({ behavior: "smooth", block: "start" })
-  }
-
-  const handleSearchSelectCategoria = (categoria: Categoria) => {
-    setSelectedSubcategory(null)
-    handleCategorySelect(categoria)
-    scrollToContent()
-  }
-
-  const handleSearchSelectSubcategoria = (categoria: Categoria, subcategoria: Subcategoria) => {
-    setSelectedCategory(categoria)
-    handleSubcategorySelect(subcategoria)
-    scrollToContent()
-  }
-
-  const handleSearchSelectObjeto = (ref: ObjetoRef, atributoCodigo?: string) => {
-    setSelectedCategory(ref.categoria)
-    setSelectedSubcategory(ref.subcategoria)
-    setCurrentLevel("objects")
-    setSearchTerm("")
-    setHighlightAtributo(atributoCodigo ?? null)
-    setOpenObjetoCodigo(ref.objeto.codigo)
-  }
-
-  const handleDialogOpenChange = (objeto: Objeto, open: boolean) => {
-    if (open) {
-      setHighlightAtributo(null)
-      setOpenObjetoCodigo(objeto.codigo)
-    } else {
-      setOpenObjetoCodigo(null)
-      setHighlightAtributo(null)
-    }
-  }
-
-  const dbyfCodes = useMemo(() => {
-    const set = new Set<number>()
+  const isDByF = (codigo: string | number): boolean => {
     try {
-      dbyFData.DByF.forEach((item: any) => {
+      const numCodigo = typeof codigo === 'string' ? Number.parseInt(codigo, 10) : codigo;
+      return dbyFData.DByF.some((item: any) => {
         const itemCode = Number.parseInt(item.Column5?.toString() || "0")
-        if (!Number.isNaN(itemCode)) set.add(itemCode)
+        return itemCode === numCodigo
       })
     } catch (error) {
-      // Sin datos DByF
+      return false
     }
-    return set
-  }, [])
+  }
 
-  const isDByF = (codigo: number): boolean => dbyfCodes.has(codigo)
-
-  const toggleDefinition = (codigo: number) => {
+  const toggleDefinition = (codigo: string) => {
     setExpandedDefinitions((prev) => {
       const newSet = new Set(prev)
       if (newSet.has(codigo)) {
@@ -337,48 +377,84 @@ export function GeographicDataDashboard() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="sticky top-0 z-50 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 backdrop-blur-sm shadow-sm rounded-lg mb-8 p-4">
-          <div className="flex items-center justify-center gap-6">
-            <img src="/images/logo-idera.png" alt="IDERA Logo" className="h-28 w-auto" />
-            <div className="text-center">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-1 text-balance">
-                Catálogo de Objetos Geográficos
-              </h1>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 text-pretty">
-                Infraestructura de Datos Espaciales de la República Argentina
-              </p>
+        <div className="sticky top-0 z-50 backdrop-blur-sm shadow-lg rounded-xl mb-8 overflow-hidden">
+          {/* Gradient background - green tones */}
+          <div className="bg-gradient-to-r from-[#1a4731] via-[#2d6a4f] to-[#40916c] p-5">
+            <div className="flex items-center justify-between gap-4">
+
+              {/* Left: IDESoB logo (main) - links to idesob.uns.edu.ar */}
+              <div className="flex-shrink-0">
+                <a href="https://idesob.uns.edu.ar/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="/logo-idesob.png"
+                    alt="Logo IDESoB"
+                    className="h-16 w-auto object-contain drop-shadow-md bg-white/90 rounded-lg px-3 py-1 hover:opacity-85 transition-opacity cursor-pointer"
+                  />
+                </a>
+              </div>
+
+              {/* Center: Title */}
+              <div className="flex-1 text-center px-2">
+                <div className="flex items-center justify-center gap-2 mb-1">
+                  <span className="inline-block w-10 h-px bg-white/40 rounded-full" />
+                  <span className="text-xs font-semibold tracking-[0.3em] text-white/75 uppercase">IDESoB</span>
+                  <span className="inline-block w-10 h-px bg-white/40 rounded-full" />
+                </div>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-balance drop-shadow-md"
+                  style={{ color: "#d8f3dc" }}>
+                  Catálogo de Objetos Geográficos
+                </h1>
+                <p className="text-sm sm:text-base font-medium mt-1 text-pretty" style={{ color: "#b7e4c7" }}>
+                  Infraestructura de Datos Espaciales del Sudoeste Bonaerense
+                </p>
+              </div>
+
+              {/* Right: UNS logo - links to uns.edu.ar */}
+              <div className="flex-shrink-0">
+                <a href="https://www.uns.edu.ar/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="/logo-uns.png"
+                    alt="Logo UNS"
+                    className="h-16 w-auto object-contain drop-shadow-md bg-white/90 rounded-lg px-3 py-1 hover:opacity-85 transition-opacity cursor-pointer"
+                  />
+                </a>
+              </div>
+
             </div>
           </div>
+          {/* Bottom accent strip - lighter green */}
+          <div className="h-1 bg-gradient-to-r from-[#52b788] via-[#95d5b2] to-[#52b788]" />
         </div>
 
         {/* Information Banner */}
         <Card className="mb-6 border-2 border-cyan-200 bg-gradient-to-r from-cyan-50 to-blue-50 shadow-md">
           <CardContent className="p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">
               {/* Left Column */}
               <div className="space-y-4">
                 <div>
                   <h3 className="font-bold text-sm text-gray-700 mb-1">ALCANCE</h3>
                   <p className="text-sm text-gray-900 leading-relaxed">
-                    Facilitar el manejo de la información Geoespacial de forma homologada y descentralizada que
-                    contribuya a garantizar la interoperabilidad y calidad de la información generada en el ámbito
-                    nacional.
+                    Facilitar el manejo de la información geográfica de forma homologada y descentralizada que
+                    contribuya a garantizar la interoperabilidad y calidad de la información geográfica producida en el ámbito de la IDESoB.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-bold text-sm text-gray-700 mb-1">CAMPO DE APLICACIÓN</h3>
                   <p className="text-sm text-gray-900 leading-relaxed">
-                    Generación de Cartografía Oficial de la República Argentina.
+                    Instituciones territoriales del Sudoeste Bonaerense.<br />
+                    Autoridades de planificación del Sudoeste Bonaerense.<br />
+                    Todos los responsables de la creación de información geográfica.
                   </p>
                 </div>
                 <div className="grid grid-cols-3 gap-4">
                   <div>
                     <h3 className="font-bold text-sm text-gray-700 mb-1">NÚMERO DE LA VERSIÓN</h3>
-                    <p className="text-sm text-gray-900">2.2</p>
+                    <p className="text-sm text-gray-900">2.1</p>
                   </div>
                   <div>
                     <h3 className="font-bold text-sm text-gray-700 mb-1">FECHA DE LA VERSIÓN</h3>
-                    <p className="text-sm text-gray-900">Septiembre 2025</p>
+                    <p className="text-sm text-gray-900">2026</p>
                   </div>
                   <div>
                     <h3 className="font-bold text-sm text-gray-700 mb-1">LENGUAJE</h3>
@@ -445,52 +521,32 @@ export function GeographicDataDashboard() {
                   </div>
                 </div>
 
-                {/* Symbology Download Menu */}
-                <div className="pt-3 border-t border-cyan-200">
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white">
-                        <Download className="h-4 w-4 mr-2" />
-                        Simbología para Datos Básicos y Fundamentales
-                        <ChevronDown className="h-4 w-4 ml-2" />
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-56">
-                      <DropdownMenuItem
-                        onClick={() => {
-                          // TODO: Replace with actual ZIP file download
-                          alert(
-                            "Por favor, proporciona el archivo ZIP para SLD-SVG (sin escala) para habilitar esta descarga.",
-                          )
-                        }}
-                      >
-                        <Download className="h-4 w-4 mr-2" />
-                        SLD-SVG sin escala (zip)
-                      </DropdownMenuItem>
-                      <DropdownMenuItem
-                        onClick={() => {
-                          // TODO: Replace with actual ZIP file download
-                          alert(
-                            "Por favor, proporciona el archivo ZIP para SLD-SVG (con escala) para habilitar esta descarga.",
-                          )
-                        }}
-                      >
-                        <Download className="h-4 w-4 mr-2" />
-                        SLD-SVG con escala (zip)
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                </div>
+
               </div>
             </div>
           </CardContent>
         </Card>
 
         {/* Main Content */}
-        <div id="main-content" className="space-y-6 scroll-mt-40">
+        <div className="space-y-6">
           {/* Navigation Controls */}
           <div className="flex items-center gap-4 mb-6">
-            {currentLevel !== "categories" && (
+            {currentLevel !== "categories" && !isGlobalSearch && (
+              <Button
+                variant="outline"
+                onClick={() => {
+                  setCurrentLevel("categories")
+                  setSelectedCategory(null)
+                  setSelectedSubcategory(null)
+                  setSearchTerm("")
+                }}
+                className="flex items-center gap-2 bg-transparent"
+              >
+                <Home className="h-4 w-4" />
+                Inicio
+              </Button>
+            )}
+            {currentLevel !== "categories" && !isGlobalSearch && (
               <Button
                 variant="outline"
                 onClick={handleBackNavigation}
@@ -500,49 +556,93 @@ export function GeographicDataDashboard() {
                 Volver
               </Button>
             )}
-            <div className="relative flex-1 max-w-xl">
+            <div className="relative flex-1 max-w-md">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
-                id="global-search-input"
-                type="search"
-                aria-label="Buscar en el catálogo"
-                placeholder="Buscar categorías, subcategorías, objetos o atributos..."
+                placeholder="Buscar en el catálogo (clases y subclases)..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                onKeyDown={(e) => e.key === "Escape" && setSearchTerm("")}
-                className="pl-10 pr-10 border-gray-300 [&::-webkit-search-cancel-button]:hidden"
+                className="pl-10 border-gray-300"
               />
-              {searchTerm && (
-                <button
-                  type="button"
-                  id="global-search-clear"
-                  aria-label="Limpiar búsqueda"
-                  onClick={() => setSearchTerm("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-0.5 text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              )}
             </div>
           </div>
 
-          {searchResults && (
-            <SearchResults
-              results={searchResults}
-              rawQuery={deferredSearchTerm.trim()}
-              getCategoryConfig={getCategoryConfig}
-              getGeometryType={getGeometryType}
-              getGeometryColor={getGeometryColor}
-              isDByF={isDByF}
-              onSelectCategoria={handleSearchSelectCategoria}
-              onSelectSubcategoria={handleSearchSelectSubcategoria}
-              onSelectObjeto={handleSearchSelectObjeto}
-            />
-          )}
+          {isGlobalSearch ? (
+            <div className="space-y-8">
+              <h2 className="text-2xl font-bold text-gray-800 border-b pb-2">Resultados de búsqueda</h2>
+              
+              {searchResults.categories.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-700">Clases ({searchResults.categories.length})</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                    {searchResults.categories.map((categoria: Categoria) => {
+                      const config = getCategoryConfig(categoria.codigo)
+                      const IconComponent = config.icon
+                      return (
+                        <div
+                          key={categoria.codigo}
+                          className={`cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[130px] flex flex-col justify-center items-center text-center shadow-sm bg-white ${config.borderColor}`}
+                          onClick={() => {
+                            handleCategorySelect(categoria)
+                          }}
+                        >
+                          <div className={`rounded-full p-3 mb-2 shadow-md ${config.circleColor}`}>
+                            <IconComponent className="h-8 w-8 text-white" />
+                          </div>
+                          <div className="font-bold text-sm leading-tight mb-2 text-gray-800">{categoria.nombre}</div>
+                          <Badge variant="outline" className="mb-1 text-xs bg-white border-gray-300">
+                            Código: {categoria.codigo.toString().padStart(2, "0")}
+                          </Badge>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
 
-          {!searchResults && currentLevel === "categories" && (
+              {searchResults.subcategories.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-gray-700">Subclases ({searchResults.subcategories.length})</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                    {searchResults.subcategories.map((subcategoria) => {
+                      const config = getCategoryConfig(subcategoria.parentCat.codigo)
+                      return (
+                        <div
+                          key={subcategoria.codigo}
+                          className={`${config.color} ${config.hoverColor} cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[100px] flex flex-col justify-center items-center text-center shadow-sm`}
+                          onClick={() => {
+                            setSelectedCategory(subcategoria.parentCat)
+                            handleSubcategorySelect(subcategoria)
+                          }}
+                        >
+                          <div className={`${config.circleColor} rounded-full p-2 mb-2`}>
+                            <Layers className="h-6 w-6 text-white" />
+                          </div>
+                          <div className="font-bold text-sm leading-tight mb-2">{subcategoria.nombre}</div>
+                          <Badge variant="outline" className="mb-1 text-xs bg-white/50 border-gray-400">
+                            Código: {subcategoria.codigo.toString().padStart(4, "0")}
+                          </Badge>
+                          <div className="text-xs font-semibold text-gray-700 mt-2 border-t pt-1 w-full">{subcategoria.parentCat.nombre}</div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {searchResults.categories.length === 0 && searchResults.subcategories.length === 0 && (
+                <div className="text-center py-10 text-gray-500">
+                  No se encontraron resultados para "{searchTerm}"
+                </div>
+              )}
+            </div>
+          ) : (
+            <>
+
+
+          {currentLevel === "categories" && (
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {data.map((categoria: Categoria) => {
+              {(getFilteredData() as any[]).map((categoria: Categoria) => {
                 const config = getCategoryConfig(categoria.codigo)
                 const IconComponent = config.icon
                 const totalObjetos = categoria.subcategorias.reduce((acc, sub) => acc + sub.objetos.length, 0)
@@ -550,25 +650,27 @@ export function GeographicDataDashboard() {
                 return (
                   <div
                     key={categoria.codigo}
-                    className={`${config.color} ${config.hoverColor} cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[120px] flex flex-col justify-center items-center text-center shadow-sm`}
+                    className={`cursor-pointer transition-all duration-200 hover:scale-105 border-2 rounded-lg p-4 min-h-[130px] flex flex-col justify-center items-center text-center shadow-sm bg-white ${config.borderColor}`}
                     onClick={() => handleCategorySelect(categoria)}
                   >
-                    <div className={`${config.circleColor} rounded-full p-3 mb-2`}>
+                    <div
+                      className={`rounded-full p-3 mb-2 shadow-md ${config.circleColor}`}
+                    >
                       <IconComponent className="h-8 w-8 text-white" />
                     </div>
-                    <div className="font-bold text-sm leading-tight mb-2">{categoria.nombre}</div>
-                    <Badge variant="outline" className="mb-1 text-xs bg-white/50 border-gray-400">
+                    <div className="font-bold text-sm leading-tight mb-2 text-gray-800">{categoria.nombre}</div>
+                    <Badge variant="outline" className="mb-1 text-xs bg-white border-gray-300">
                       Código: {categoria.codigo.toString().padStart(2, "0")}
                     </Badge>
-                    <div className="text-xs opacity-80">{categoria.subcategorias.length} subcategorías</div>
-                    <div className="text-xs opacity-80">{totalObjetos} objetos</div>
+                    <div className="text-xs text-gray-500">{categoria.subcategorias.length} subcategorías</div>
+                    <div className="text-xs text-gray-500">{totalObjetos} objetos</div>
                   </div>
                 )
               })}
             </div>
           )}
 
-          {!searchResults && currentLevel === "subcategories" && selectedCategory && (
+          {currentLevel === "subcategories" && selectedCategory && (
             <div className="space-y-4">
               <Card className="border-2 border-gray-300 shadow-sm bg-white">
                 <CardHeader>
@@ -591,7 +693,7 @@ export function GeographicDataDashboard() {
               </Card>
 
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                {selectedCategory.subcategorias.map((subcategoria: Subcategoria) => {
+                {(getFilteredData() as any[]).map((subcategoria: Subcategoria) => {
                   const config = getCategoryConfig(selectedCategory.codigo)
                   return (
                     <div
@@ -614,7 +716,7 @@ export function GeographicDataDashboard() {
             </div>
           )}
 
-          {!searchResults && currentLevel === "objects" && selectedSubcategory && (
+          {currentLevel === "objects" && selectedSubcategory && (
             <div className="space-y-4">
               <Card className="border-2 border-gray-300 shadow-sm bg-white">
                 <CardHeader>
@@ -629,7 +731,7 @@ export function GeographicDataDashboard() {
               </Card>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {selectedSubcategory.objetos.map((objeto: Objeto) => {
+                {(getFilteredData() as any[]).map((objeto: Objeto) => {
                   const geometryType = getGeometryType(objeto.geometria)
                   const objectSlug = `${objeto.codigo}-${objeto.nombre
                     .toLowerCase()
@@ -648,27 +750,34 @@ export function GeographicDataDashboard() {
                   return (
                     <Card
                       key={objeto.codigo}
-                      className="transition-all duration-200 hover:shadow-lg border-2 border-gray-200 hover:border-gray-300"
+                      className="transition-all duration-200 hover:shadow-xl border-0 shadow-md overflow-hidden"
                     >
-                      <CardHeader className="pb-3">
+                      {/* Colored top accent bar using exact Excel HEX color */}
+                      <div
+                        className="h-1.5 w-full"
+                        style={{ backgroundColor: selectedCategory?.color || getCategoryConfig(selectedCategory?.codigo || "").circleColor.replace("bg-[","").replace("]","") }}
+                      />
+                      <CardHeader className="pb-2 bg-gradient-to-b from-gray-50 to-white">
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-2">
-                              <Badge variant="outline" className="text-xs">
-                                Código: {objeto.codigo.toString().padStart(6, "0")}
+                            <div className="flex items-center gap-2 mb-2 flex-wrap">
+                              <Badge variant="outline" className="text-xs font-mono bg-white">
+                                {objeto.codigo}
                               </Badge>
-                              <Badge className={`${getGeometryColor(geometryType)} text-xs`}>{geometryType}</Badge>
+                              {getGeometryTypes(objeto.geometria).map((gType) => (
+                                <Badge key={gType} className={`${getGeometryColor(gType)} text-xs shadow-sm`}>{gType}</Badge>
+                              ))}
                             </div>
-                            <CardTitle className="text-lg text-balance leading-tight mb-2">{objeto.nombre}</CardTitle>
+                            <CardTitle className="text-base font-bold text-gray-900 text-balance leading-tight mb-1">{objeto.nombre}</CardTitle>
                             {isDByF(objeto.codigo) && (
-                              <Badge className="bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-semibold">
+                              <Badge className="bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-semibold shadow-sm">
                                 Dato Básico y Fundamental
                               </Badge>
                             )}
                           </div>
                         </div>
                       </CardHeader>
-                      <CardContent>
+                      <CardContent className="pt-2">
                         <div className="mb-4">
                           <div
                             className={`text-sm text-gray-900 text-pretty leading-relaxed ${
@@ -687,14 +796,16 @@ export function GeographicDataDashboard() {
                           )}
                         </div>
                         <div className="flex items-center justify-end mb-4">
-                          <Dialog
-                            open={openObjetoCodigo === objeto.codigo}
-                            onOpenChange={(open) => handleDialogOpenChange(objeto, open)}
-                          >
+                          <Dialog>
                             <DialogTrigger asChild>
-                              <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
+                              <Button
+                                variant="default"
+                                size="sm"
+                                className="flex items-center gap-2 text-white hover:opacity-90 shadow-sm border-0"
+                                style={{ backgroundColor: selectedCategory?.color || "#3B82F6" }}
+                              >
                                 <FileText className="h-4 w-4" />
-                                Atributos ({objeto.atributos.length})
+                                Ver atributos ({objeto.atributos.length})
                               </Button>
                             </DialogTrigger>
                             <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
@@ -709,9 +820,11 @@ export function GeographicDataDashboard() {
                                   )}
                                 </DialogTitle>
                                 <DialogDescription>
-                                  <div className="flex gap-2 mt-2">
+                                  <div className="flex gap-2 mt-2 flex-wrap">
                                     <Badge variant="outline">Código: {objeto.codigo.toString().padStart(6, "0")}</Badge>
-                                    <Badge className={getGeometryColor(geometryType)}>{geometryType}</Badge>
+                                    {getGeometryTypes(objeto.geometria).map((gType) => (
+                                      <Badge key={gType} className={getGeometryColor(gType)}>{gType}</Badge>
+                                    ))}
                                   </div>
                                   {isDByF(objeto.codigo) && (
                                     <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded-md">
@@ -737,45 +850,46 @@ export function GeographicDataDashboard() {
                                   </h4>
                                   <div className="grid grid-cols-1 gap-3 max-h-96 overflow-y-auto">
                                     {objeto.atributos.map((atributo, index) => {
-                                      const detalle = getAtributoDetalle(atributo.codigo)
-                                      const isHighlighted =
-                                        openObjetoCodigo === objeto.codigo &&
-                                        highlightAtributo === atributo.codigo?.trim()
                                       return (
-                                        <div
-                                          key={index}
-                                          id={`attr-${objeto.codigo}-${atributo.codigo?.trim()}`}
-                                          className={`p-3 rounded-md border transition-colors ${
-                                            isHighlighted
-                                              ? "bg-yellow-50 border-yellow-400 ring-2 ring-yellow-300"
-                                              : "bg-gray-50 border-gray-200"
-                                          }`}
-                                        >
+                                        <div key={index} className="p-3 bg-gray-50 rounded-md border border-gray-200">
                                           <div className="flex items-start gap-2 mb-2">
                                             <Badge variant="outline" className="border-gray-300 shrink-0">
                                               {atributo.codigo}
                                             </Badge>
                                             <div className="flex-1">
                                               <div className="font-semibold text-sm text-gray-900">
-                                                {detalle?.nombre || atributo.denominacion}
+                                                {atributo.denominacion}
                                               </div>
-                                              {detalle && (
+                                              {atributo.definicion && (
                                                 <>
                                                   <div className="text-xs text-gray-600 mt-1 leading-relaxed">
-                                                    {detalle.definicion}
+                                                    {atributo.definicion}
                                                   </div>
                                                   <div className="flex gap-2 mt-2">
-                                                    <Badge variant="secondary" className="text-xs">
-                                                      Tipo: {detalle.tipo}
-                                                    </Badge>
+                                                    {atributo.tipo && (
+                          <Badge variant="secondary" className="text-xs">
+                            Tipo: {atributo.tipo === "PERFIL DE OG" ? (
+                              <a 
+                                href="https://drive.google.com/drive/u/0/folders/1j68xYZ0IKxnQToZ96Wx1r2o7Lq-IlvXq" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline ml-1"
+                              >
+                                {atributo.tipo}
+                              </a>
+                            ) : (
+                              atributo.tipo
+                            )}
+                          </Badge>
+                        )}
                                                   </div>
-                                                  {detalle.dominio && detalle.dominio.length > 0 && (
+                                                  {atributo.dominio && atributo.dominio.length > 0 && (
                                                     <div className="mt-2">
                                                       <div className="text-xs font-semibold text-gray-700 mb-1">
                                                         Valores posibles:
                                                       </div>
                                                       <div className="space-y-1 max-h-32 overflow-y-auto">
-                                                        {detalle.dominio.map((valor, idx) => (
+                                                        {atributo.dominio.map((valor, idx) => (
                                                           <div
                                                             key={idx}
                                                             className="text-xs text-gray-600 pl-2 border-l-2 border-gray-300"
@@ -792,9 +906,9 @@ export function GeographicDataDashboard() {
                                                       </div>
                                                     </div>
                                                   )}
-                                                  {detalle.observaciones && detalle.observaciones !== "-" && (
+                                                  {atributo.observaciones && atributo.observaciones !== "-" && (
                                                     <div className="text-xs text-gray-500 mt-1 italic">
-                                                      {detalle.observaciones}
+                                                      {atributo.observaciones}
                                                     </div>
                                                   )}
                                                 </>
@@ -825,24 +939,53 @@ export function GeographicDataDashboard() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
                               <DropdownMenuItem
-                                onClick={() =>
+                                onSelect={() =>
                                   window.open(
                                     `https://www.idera.gob.ar/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=${objectSlug}`,
                                     "_blank",
                                   )
                                 }
+                                className="cursor-pointer"
                               >
                                 <ExternalLink className="h-3 w-3 mr-2" />
                                 WFS
                               </DropdownMenuItem>
+                              {objeto.archivo_xml && (
+                                <DropdownMenuItem
+                                  onSelect={() => {
+                                    const link = document.createElement("a");
+                                    link.href = objeto.archivo_xml || "";
+                                    link.download = (objeto.archivo_xml || "").split('/').pop() || "";
+                                    link.click();
+                                  }}
+                                  className="cursor-pointer"
+                                >
+                                  <Download className="h-3 w-3 mr-2" />
+                                  Catálogo (XML ISO 19110)
+                                </DropdownMenuItem>
+                              )}
+                              {objeto.archivo_docx && (
+                                <DropdownMenuItem
+                                  onSelect={() => {
+                                    const link = document.createElement("a");
+                                    link.href = objeto.archivo_docx || "";
+                                    link.download = (objeto.archivo_docx || "").split('/').pop() || "";
+                                    link.click();
+                                  }}
+                                  className="cursor-pointer"
+                                >
+                                  <Download className="h-3 w-3 mr-2" />
+                                  Planilla de definición (DOCX)
+                                </DropdownMenuItem>
+                              )}
                             </DropdownMenuContent>
                           </DropdownMenu>
                           <Button
                             variant="outline"
                             size="sm"
-                            className="w-full text-xs bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100"
+                            className="w-full text-xs bg-amber-50 border-amber-300 text-amber-800 hover:bg-amber-100 font-semibold"
                             onClick={() =>
-                              window.open(`https://www.idera.gob.ar/catalogo/metadatos/${objeto.codigo}`, "_blank")
+                              window.open(`https://catalogo-ig.labgeot.uns.edu.ar/geonetwork/srv/spa/catalog.search#/home`, "_blank")
                             }
                           >
                             <FileText className="h-3 w-3 mr-1" />
@@ -855,6 +998,8 @@ export function GeographicDataDashboard() {
                 })}
               </div>
             </div>
+          )}
+          </>
           )}
         </div>
       </div>
